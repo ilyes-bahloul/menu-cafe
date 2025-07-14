@@ -43,12 +43,17 @@ function getEncodedImageUrl(filename) {
   return '/' + filename.split('/').map(encodeURIComponent).join('/');
 }
 
+function Logo() {
+  return <img src="/Logo.png" alt="Logo" className="main-logo" />;
+}
+
 function MenuPage({ menu, category, bgImage }) {
   const navigate = useNavigate();
   if (!menu[category]) return <div>Catégorie introuvable.</div>;
   return (
     <div className="menu-bg" style={{backgroundImage: `url(${getEncodedImageUrl(bgImage)})`}}>
       <div className="menu-overlay">
+        <Logo />
         <h1 className="menu-title">{category}</h1>
         <div className="menu-list">
           {menu[category].map((item, idx) => (
@@ -70,6 +75,7 @@ function Home({ menu }) {
   const categories = Object.keys(menu);
   return (
     <div className="home-bg">
+      <Logo />
       <h1 className="home-title">PAPOTER COFFEE SHOP</h1>
       <div className="category-list">
         {categories.map((cat, idx) => (
