@@ -1,718 +1,406 @@
 {
-    "TARTE SALÉE": [
-      {
-        "item": "Végétarienne",
-        "price": "$10.00"
-      },
-      {
-        "item": "Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Poulet & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "TOAST": [
-      {
-        "item": "Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Oeuf & Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Jambon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Poulet & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "CROISSANT SALÉ": [
-      {
-        "item": "Oeuf",
-        "price": "$10.00"
-      },
-      {
-        "item": "Jambon",
-        "price": "$10.00"
-      },
-      {
-        "item": "Oeuf & Jambon",
-        "price": "$10.00"
-      },
-      {
-        "item": "Poulet",
-        "price": "$10.00"
-      }
-    ],
-    "SANDWICHS": [
-      {
-        "item": "Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Jambon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Poulet & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "PANINI": [
-      {
-        "item": "Panini Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Panini Jambon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Panini Poulet & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "OMELETTE": [
-      {
-        "item": "Omelette Végétarienne & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Omelette Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Omelette Jambon & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "CRÊPES SALÉES": [
-      {
-        "item": "Crêpe Thon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Jambon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Thon & Jambon & Fromage",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Poulet & Fromage",
-        "price": "$10.00"
-      }
-    ],
-    "CRÊPES SUCRÉES": [
-      {
-        "item": "Crêpe Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Nutella & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Complet",
-        "price": "$10.00"
-      },
-      {
-        "item": "Spaghetti Crêpe Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Spaghetti Nutella & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Spaghetti Crêpe Complet",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Roulée Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Roulée Nutella & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Roulée Complet",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Cornée Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Cornée Nutella & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crêpe Cornée Complet",
-        "price": "$10.00"
-      }
-    ],
-    "STICKS & BOLLY": [
-      { "item": "Nutella (YO-YO STICK)", "price": "$10.00" },
-      { "item": "Spéculos (YO-YO STICK)", "price": "$10.00" },
-      { "item": "Oreo (YO-YO STICK)", "price": "$10.00" },
-      { "item": "Lotus (YO-YO STICK)", "price": "$10.00" },
-      { "item": "Fruits de saison & Fruits Secs (YO-YO STICK)", "price": "$10.00" },
-      { "item": "Nutella (GAUFRES STICK)", "price": "$10.00" },
-      { "item": "Spéculos (GAUFRES STICK)", "price": "$10.00" },
-      { "item": "Oreo (GAUFRES STICK)", "price": "$10.00" },
-      { "item": "Lotus (GAUFRES STICK)", "price": "$10.00" },
-      { "item": "Fruits de saison & Fruits Secs (GAUFRES STICK)", "price": "$10.00" },
-      { "item": "Nutella (BOLLY BOLL)", "price": "$10.00" },
-      { "item": "Spéculos (BOLLY BOLL)", "price": "$10.00" },
-      { "item": "Oreo (BOLLY BOLL)", "price": "$10.00" },
-      { "item": "Lotus (BOLLY BOLL)", "price": "$10.00" },
-      { "item": "Fruits de saison & Fruits Secs (BOLLY BOLL)", "price": "$10.00" }
-    ],
-    "GAUFRES": [
-      { "item": "Chocolat", "price": "$10.00" },
-      { "item": "Chocolat & Banane", "price": "$10.00" },
-      { "item": "Chocolat & Fruits Secs", "price": "$10.00" },
-      { "item": "Miel", "price": "$10.00" },
-      { "item": "Miel & Banane", "price": "$10.00" },
-      { "item": "Miel & Fruits Secs", "price": "$10.00" },
-      { "item": "Complet", "price": "$10.00" }
-    ],
-    "VINNOISERIES": [
-      {
-        "item": "Fondant Chocolat",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fondant Pistache",
-        "price": "$10.00"
-      },
-      {
-        "item": "Tiramisu",
-        "price": "$10.00"
-      },
-      {
-        "item": "Cheesecake",
-        "price": "$10.00"
-      },
-      {
-        "item": "Sun Sébastien",
-        "price": "$10.00"
-      },
-      {
-        "item": "Cacke",
-        "price": "$10.00"
-      },
-      {
-        "item": "Brownies",
-        "price": "$10.00"
-      },
-      {
-        "item": "Donut's",
-        "price": "$10.00"
-      },
-      {
-        "item": "Tarte",
-        "price": "$10.00"
-      }
-    ],
-    "PANCAKES": [
-      {
-        "item": "Chocolat",
-        "price": "$10.00"
-      },
-      {
-        "item": "Chocolat & Banane",
-        "price": "$10.00"
-      },
-      {
-        "item": "Chocolat & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Miel",
-        "price": "$10.00"
-      },
-      {
-        "item": "Miel & Banane",
-        "price": "$10.00"
-      },
-      {
-        "item": "Miel & Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Complet",
-        "price": "$10.00"
-      }
-    ],
-    "BOISSONS": [
-      {
-        "item": "Eau 0.5L",
-        "price": "$10.00"
-      },
-      {
-        "item": "Eau 1L",
-        "price": "$10.00"
-      },
-      {
-        "item": "Soda",
-        "price": "$10.00"
-      },
-      {
-        "item": "Schweeps",
-        "price": "$10.00"
-      },
-      {
-        "item": "Power Drink",
-        "price": "$10.00"
-      }
-    ],
-    "THÉ": [
-      { "item": "Monthe", "price": "$10.00" },
-      { "item": "Kyufi", "price": "$10.00" },
-      { "item": "Infusion", "price": "$10.00" },
-      { "item": "Citron (Iced Tea)", "price": "$10.00" },
-      { "item": "Pêche (Iced Tea)", "price": "$10.00" },
-      { "item": "Fruits Rouges (Iced Tea)", "price": "$10.00" }
-    ],
-    "MOJITO": [
-      {
-        "item": "Vergin",
-        "price": "$10.00"
-      },
-      {
-        "item": "Blue",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fraise",
-        "price": "$10.00"
-      },
-      {
-        "item": "Black",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fruit Rouges",
-        "price": "$10.00"
-      }
-    ],
-    "SMOOTHIES": [
-      {
-        "item": "Fraise",
-        "price": "$10.00"
-      },
-      {
-        "item": "Banane",
-        "price": "$10.00"
-      },
-      {
-        "item": "Kiwi",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fruits Rouges",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mixed",
-        "price": "$10.00"
-      }
-    ],
-    "JUS": [
-      {
-        "item": "Citronnade",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fraise",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mangue",
-        "price": "$10.00"
-      },
-      {
-        "item": "Kiwi",
-        "price": "$10.00"
-      },
-      {
-        "item": "Ananas",
-        "price": "$10.00"
-      },
-      {
-        "item": "Banane",
-        "price": "$10.00"
-      },
-      {
-        "item": "Cocktail",
-        "price": "$10.00"
-      }
-    ],
-    "BUBBLE COFFEE": [
-      {
-        "item": "Strawberry Bubble Coffee",
-        "price": "$10.00"
-      },
-      {
-        "item": "Banana Bubble Coffee",
-        "price": "$10.00"
-      },
-      {
-        "item": "Vanilla Bubble Coffee",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mocha Bubble Coffee",
-        "price": "$10.00"
-      },
-      {
-        "item": "Lemon Bubble Coffee",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mixed",
-        "price": "$10.00"
-      }
-    ],
-    "AVOCADO COFFEE": [
-      {
-        "item": "Avocado Mocha",
-        "price": "$10.00"
-      },
-      {
-        "item": "Avocado Zebra",
-        "price": "$10.00"
-      },
-      {
-        "item": "Avocado Vanille",
-        "price": "$10.00"
-      },
-      {
-        "item": "Avocado Caramel",
-        "price": "$10.00"
-      }
-    ],
-    "MATCHA": [
-      {
-        "item": "Matcha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Strawberry Matcha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Vanilla Matcha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mocha Matcha Latte",
-        "price": "$10.00"
-      }
-    ],
-    "MILKSHAKES": [
-      {
-        "item": "Fraise",
-        "price": "$10.00"
-      },
-      {
-        "item": "Pistache",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Oreo",
-        "price": "$10.00"
-      },
-      {
-        "item": "Lotus",
-        "price": "$10.00"
-      }
-    ],
-    "FRAPPUCCINO": [
-      {
-        "item": "Caramel",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Pistache",
-        "price": "$10.00"
-      },
-      {
-        "item": "Spéculos",
-        "price": "$10.00"
-      },
-      {
-        "item": "Oreo",
-        "price": "$10.00"
-      },
-      {
-        "item": "Biscuit",
-        "price": "$10.00"
-      }
-    ],
-    "NESCAFÉ": [
-      {
-        "item": "Nescafé Normal",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Vanille",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Caramel",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Fruit Sec",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Nutella",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Oreo",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Nescafé",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Complet",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nescafé Complet Pistache",
-        "price": "$10.00"
-      }
-    ],
-    "ICED SPANISH LATTE": [
-      {
-        "item": "Normal Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Vanilla Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Caramel Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nutella Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Pistachio Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Banana Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fraise Spanish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Mocha Spanish latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Zebra Spanish latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Papoter Spanish Latte",
-        "price": "$10.00"
-      }
-    ],
-    "ICED COFFEE": [
-      {
-        "item": "Iced Mocha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Banana Iced Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Vanilla Mocha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Caramel Mocha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Coconut Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Coconut Mocha latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced White Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Zebra Mocha Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Papoter Iced Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Américano Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Banana Américano",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Turkish Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Caramel Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Vanilla Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Cappuccino Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Oreo Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Pistachio Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Iced Fraise Latte",
-        "price": "$10.00"
-      },
-      {
-        "item": "Lotus Creme Iced latte",
-        "price": "$10.00"
-      }
-    ],
-    "CAFÉ": [
-      {
-        "item": "Capsule",
-        "price": "$10.00"
-      },
-      {
-        "item": "Express",
-        "price": "$10.00"
-      },
-      {
-        "item": "Américain",
-        "price": "$10.00"
-      },
-      {
-        "item": "Cappuccino",
-        "price": "$10.00"
-      },
-      {
-        "item": "Capucin",
-        "price": "$10.00"
-      },
-      {
-        "item": "Café Crème",
-        "price": "$10.00"
-      },
-      {
-        "item": "Café Turc",
-        "price": "$10.00"
-      }
-    ],
-    "SUPPLÉMENTS": [
-      {
-        "item": "Monthe",
-        "price": "$10.00"
-      },
-      {
-        "item": "Nestle",
-        "price": "$10.00"
-      },
-      {
-        "item": "Crème Chantier",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fruits Secs",
-        "price": "$10.00"
-      },
-      {
-        "item": "Fruits De Saison",
-        "price": "$10.00"
-      },
-      {
-        "item": "Thon",
-        "price": "$10.00"
-      },
-      {
-        "item": "Jambon",
-        "price": "$10.00"
-      },
-      {
-        "item": "Escalope",
-        "price": "$10.00"
-      },
-      {
-        "item": "Sauce Fromagère",
-        "price": "$10.00"
-      }
-    ],
-    "PETIT DÉJEUNER": [
-      {
-        "item": "EXPRESS",
-        "price": "$10.00"
-      },
-      {
-        "item": "EXPRESS EXTRA SUCRÉ",
-        "price": "$10.00"
-      },
-      {
-        "item": "EXPRESS EXTRA SALÉ",
-        "price": "$10.00"
-      },
-      {
-        "item": "MIXED",
-        "price": "$10.00"
-      }
-    ]
-  }
+  "Petit déjeuner": [
+    {
+      "item": "Café au chois l'eau 0.5 croissant",
+      "price": "6 dt"
+    },
+    {
+      "item": "Café au chois jus l'eau 0.5 mini pain cake",
+      "price": "10 dt"
+    },
+    {
+      "item": "Café au chois jus l'eau 0.5 Croissant salé ou mini omelette",
+      "price": "10 dt"
+    },
+    {
+      "item": "Café au chois jus l'eau 0.5 mini pain cake croissant salé",
+      "price": "13 dt"
+    }
+  ],
+  "Café glacé": [
+    {
+      "item": "Latte",
+      "price": "5.9 dt"
+    },
+    {
+      "item": "Noisette",
+      "price": "7.5 dt"
+    },
+    {
+      "item": "Caramel",
+      "price": "7.5 dt"
+    },
+    {
+      "item": "Vanille",
+      "price": "7.5 dt"
+    },
+    {
+      "item": "Cookies",
+      "price": "7.5 dt"
+    },
+    {
+      "item": "Tiramisu",
+      "price": "7.5 dt"
+    }
+  ],
+  "Café machine": [
+    {
+      "item": "Express",
+      "price": "2.8 dt"
+    },
+    {
+      "item": "American",
+      "price": "3 dt"
+    },
+    {
+      "item": "Cop",
+      "price": "3.2 dt"
+    },
+    {
+      "item": "Café crémé",
+      "price": "3.6 dt"
+    }
+  ],
+  "Thé": [
+    {
+      "item": "Thé Normal",
+      "price": "2 dt"
+    },
+    {
+      "item": "Thé Kyoufy",
+      "price": "5 dt"
+    },
+    {
+      "item": "Thé infusion",
+      "price": "5 dt"
+    }
+  ],
+  "Avocatto": [
+    {
+      "item": "Vanille",
+      "price": "6 dt"
+    },
+    {
+      "item": "Noisette",
+      "price": "7.5 dt"
+    },
+    {
+      "item": "Pistache",
+      "price": "9 dt"
+    }
+  ],
+  "Matcha": [
+    {
+      "item": "Classique",
+      "price": "7 dt"
+    },
+    {
+      "item": "Vanille",
+      "price": "10 dt"
+    },
+    {
+      "item": "Caramel",
+      "price": "10 dt"
+    },
+    {
+      "item": "Mangue",
+      "price": "12 dt"
+    },
+    {
+      "item": "Strawberry",
+      "price": "12 dt"
+    }
+  ],
+  "Nescafé": [
+    {
+      "item": "Nescafé",
+      "price": "4 dt"
+    },
+    {
+      "item": "Nescafé aromatisé",
+      "price": "7 dt"
+    },
+    {
+      "item": "Nescafé glacé aromatisé",
+      "price": "8 dt"
+    }
+  ],
+  "Café latte": [
+    {
+      "item": "Nes quit",
+      "price": "5 dt"
+    },
+    {
+      "item": "Légois",
+      "price": "6 dt"
+    },
+    {
+      "item": "Noisette",
+      "price": "6.5 dt"
+    },
+    {
+      "item": "Caramel",
+      "price": "6.5 dt"
+    },
+    {
+      "item": "Vanille",
+      "price": "6.5 dt"
+    },
+    {
+      "item": "Cookies",
+      "price": "6.5 dt"
+    },
+    {
+      "item": "Tramissou",
+      "price": "6.5 dt"
+    }
+  ],
+  "Drink": [
+    {
+      "item": "L'eau: 500 ml",
+      "price": "1.5 dt"
+    },
+    {
+      "item": "L'eau: 1l",
+      "price": "3.5 dt"
+    },
+    {
+      "item": "Soda",
+      "price": "3.5 dt"
+    },
+    {
+      "item": "Soda extra",
+      "price": "5 dt"
+    },
+    {
+      "item": "Shark",
+      "price": "8 dt"
+    }
+  ],
+  "Mojito": [
+    {
+      "item": "Virgin",
+      "price": "6 dt"
+    },
+    {
+      "item": "Blue",
+      "price": "7 dt"
+    },
+    {
+      "item": "Red",
+      "price": "7 dt"
+    },
+    {
+      "item": "Black",
+      "price": "9 dt"
+    },
+    {
+      "item": "Energetici",
+      "price": "10 dt"
+    }
+  ],
+  "Pistachio": [
+    {
+      "item": "Pistachio",
+      "price": "9 dt"
+    }
+  ],
+  "Milkshake": [
+    {
+      "item": "Nutella",
+      "price": "9 dt"
+    },
+    {
+      "item": "Oreo",
+      "price": "9 dt"
+    },
+    {
+      "item": "Spéculose",
+      "price": "9 dt"
+    },
+    {
+      "item": "Tiramisu",
+      "price": "9 dt"
+    },
+    {
+      "item": "Vanille",
+      "price": "9 dt"
+    },
+    {
+      "item": "Noisette",
+      "price": "9 dt"
+    },
+    {
+      "item": "Cookies",
+      "price": "9 dt"
+    }
+  ],
+  "Smoothie": [
+    {
+      "item": "Fruits rouges",
+      "price": "12 dt"
+    },
+    {
+      "item": "Pina colada",
+      "price": "12 dt"
+    },
+    {
+      "item": "Mangue-banane",
+      "price": "12 dt"
+    },
+    {
+      "item": "Mangue-peche",
+      "price": "12 dt"
+    }
+  ],
+  "Jus": [
+    {
+      "item": "Citronnade",
+      "price": "5 dt"
+    },
+    {
+      "item": "Fraise",
+      "price": "7 dt"
+    },
+    {
+      "item": "Granite",
+      "price": "7 dt"
+    },
+    {
+      "item": "Lait de Paule",
+      "price": "9 dt"
+    }
+  ],
+  "Fraputchino": [
+    {
+      "item": "Fraputchino au chois",
+      "price": "10 dt"
+    }
+  ],
+  "Bubble-yoyo-stick": [
+    {
+      "item": "Nutella",
+      "price": "11 dt"
+    },
+    {
+      "item": "Nutella oreo",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella lotus",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella glace",
+      "price": "14 dt"
+    }
+  ],
+  "Paincackes": [
+    {
+      "item": "Nutella",
+      "price": "11 dt"
+    },
+    {
+      "item": "Nutella oreo",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella lotus",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella glace",
+      "price": "14 dt"
+    },
+    {
+      "item": "Miel et recotta",
+      "price": "14 dt"
+    }
+  ],
+  "Pain perdu": [
+    {
+      "item": "Caramel, beurre sale",
+      "price": "11 dt"
+    },
+    {
+      "item": "Nutella",
+      "price": "12 dt"
+    },
+    {
+      "item": "Fruits rouges",
+      "price": "13 dt"
+    }
+  ],
+  "Crêpe": [
+    {
+      "item": "Nutella",
+      "price": "10 dt"
+    },
+    {
+      "item": "Caramel, beurre salé",
+      "price": "10 dt"
+    },
+    {
+      "item": "Nutella banane",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella glace",
+      "price": "13 dt"
+    }
+  ],
+  "Crêpe salé": [
+    {
+      "item": "Thon",
+      "price": "10 dt"
+    },
+    {
+      "item": "Jambon fumé",
+      "price": "10 dt"
+    },
+    {
+      "item": "TUNISIENNE",
+      "price": "12 dt"
+    },
+    {
+      "item": "Poulet fumé",
+      "price": "13 dt"
+    }
+  ],
+  "Gaufre": [
+    {
+      "item": "Nutella",
+      "price": "10 dt"
+    },
+    {
+      "item": "Nutella oreo",
+      "price": "12 dt"
+    },
+    {
+      "item": "Nutella lotus",
+      "price": "12 dt"
+    },
+    {
+      "item": "Nutella glace",
+      "price": "13 dt"
+    }
+  ],
+  "Omelette": [
+    {
+      "item": "Jambon fumé fromage",
+      "price": "10 dt"
+    },
+    {
+      "item": "Thon fromage",
+      "price": "11 dt"
+    },
+    {
+      "item": "Poulet fromage",
+      "price": "13 dt"
+    },
+    {
+      "item": "Poulet fumé champignons",
+      "price": "15 dt"
+    }
+  ]
+}
