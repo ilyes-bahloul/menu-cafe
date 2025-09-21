@@ -1,19 +1,19 @@
 {
   "Petit déjeuner": [
     {
-      "item": "Café au chois l'eau 0.5 croissant",
+      "item": "Café au choix, l'eau 0.5 ,croissant",
       "price": "6 dt"
     },
     {
-      "item": "Café au chois jus l'eau 0.5 mini pain cake",
+      "item": "Café au choix, jus ,l'eau 0.5 ,mini pain cake",
       "price": "10 dt"
     },
     {
-      "item": "Café au chois jus l'eau 0.5 Croissant salé ou mini omelette",
+      "item": "Café au choix jus ,l'eau 0.5, Croissant ,salé ou mini omelette",
       "price": "10 dt"
     },
     {
-      "item": "Café au chois jus l'eau 0.5 mini pain cake croissant salé",
+      "item": "Café au choix jus ,l'eau 0.5 ,mini pain cake ,croissant salé",
       "price": "13 dt"
     }
   ],
@@ -157,7 +157,7 @@
   ],
   "Drink": [
     {
-      "item": "L'eau: 500 ml",
+      "item": "L'eau: 0.5 l",
       "price": "1.5 dt"
     },
     {
@@ -202,7 +202,7 @@
   "Pistachio": [
     {
       "item": "Pistachio",
-      "price": "9 dt"
+      "price": "13 dt"
     }
   ],
   "Milkshake": [
@@ -267,13 +267,13 @@
       "price": "7 dt"
     },
     {
-      "item": "Lait de Paule",
+      "item": "Lait de Poule",
       "price": "9 dt"
     }
   ],
   "Fraputchino": [
     {
-      "item": "Fraputchino au chois",
+      "item": "Fraputchino au choix",
       "price": "10 dt"
     }
   ],
