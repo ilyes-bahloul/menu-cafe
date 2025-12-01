@@ -1,7 +1,74 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 import './App.css';
 
+// Set up PDF.js worker - use worker from src folder
+import workerSrc from './pdf.worker.min.mjs?url';
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+
+// PDF Preview Component
+function App() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageWidth, setPageWidth] = useState(window.innerWidth > 768 ? window.innerWidth * 0.9 : window.innerWidth - 20);
+  const [error, setError] = useState(null);
+  const pdfFilename = 'PAPOTER MENU FINI (1).pdf';
+  const pdfPath = '/' + encodeURIComponent(pdfFilename);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setPageWidth(window.innerWidth > 768 ? window.innerWidth * 0.9 : window.innerWidth - 20);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setError(null);
+  }
+
+  function onDocumentLoadError(error) {
+    console.error('PDF Load Error:', error);
+    setError(`Erreur lors du chargement du PDF: ${error.message || 'Erreur inconnue'}`);
+  }
+
+  return (
+    <div className="pdf-viewer-container">
+      <div className="pdf-document-wrapper">
+        <Document
+          file={pdfPath}
+          onLoadSuccess={onDocumentLoadSuccess}
+          onLoadError={onDocumentLoadError}
+          loading={<div className="pdf-loading">Chargement du menu...</div>}
+          error={
+            <div className="pdf-error">
+              {error || 'Erreur lors du chargement du PDF'}
+              <br />
+              <small>Vérifiez que le fichier existe dans le dossier public</small>
+            </div>
+          }
+        >
+          {numPages && Array.from(new Array(numPages), (el, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              renderTextLayer={true}
+              renderAnnotationLayer={false}
+              className="pdf-page"
+              width={pageWidth}
+            />
+          ))}
+        </Document>
+      </div>
+    </div>
+  );
+}
+
+// COMMENTED OUT - Original menu code
+/*
 // Associe chaque catégorie à une image de fond compressée (avec -min.png)
 const images = [
   // Petit déjeuner
@@ -141,5 +208,6 @@ function CategoryWrapper({ menu, categories }) {
   const bgImage = images[idx % images.length];
   return <MenuPage menu={menu} category={category} bgImage={bgImage} />;
 }
+*/
 
 export default App;
