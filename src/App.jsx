@@ -4,30 +4,37 @@ import './App.css';
 
 // Associe chaque catégorie à une image de fond compressée (avec -min.png)
 const images = [
-  // Petit déjeuner
+  // Brunch (position 0)
   'breackfast.jpg',
-  // Café glacé
-  '20250712_1421_Iced Coffee Menu_remix_01jzzcnwasety8pgkx9fxgdq65.png',
-  // Café machine
+  // Burger (position 1 - slot 2)
+  'burger.jpg',
+  // Salades (position 2 - slot 3)
+  'salade.jpg',
+  // Crêpes salées (position 3 - slot 4)
+  'crepe sale.jpg',
+  // Crêpes sucrées (position 4)
+  'crepe.jpg',
+  // Café (position 5)
   '20250712_1418_Coffee Menu Closeup_remix_01jzzcgx88ft4rqawf8z3xf10y-min.png',
-  // Thé
+  // Thé (position 6)
   'the.jpg',
-  // Avocatto
-  '20250712_1438_Avocado Coffee Drink_remix_01jzzdmr4xfkcrrh341hq128sn-min.png',
-  // Matcha
-  '20250712_1436_Matcha Beverage Display_remix_01jzzdgdeaeht849b8edjcbsc9-min.png',
-  // Nescafé
-  '20250712_1427_Text-Free Coffee Image_remix_01jzzd00rjf1yrqharyb7zhms6-min.png',
-  // Café latte
+  // iced coffee
+  'icedcoffe.png',
+  // iced tea
+  'iced-tea.jpg',
+  // affogato
+  'affogato.jpg',
+  // vagary coffee
   '20250712_1424_Text-Free Coffee Menu_remix_01jzzctmbsfs1tzs4tyb19bedz-min.png',
-  // Drink
-  '20250712_1508_Soda Pouring Scene_remix_01jzzf7em7esmbvjjtfkmetkn5-min.png',
-  // Mojito
-  '20250712_1459_Mojito Cocktail Menu_remix_01jzzerjxaes6bk9baxqnaberj-min.png',
-  // Pistachio
-  'pistachio.jpg',
-  // Milkshake
-  '20250712_1432_Milkshake Menu_remix_01jzzd8x33f1sv54e1gwbqdbz1-min.png',
+  // chocolat chaude
+  'chocolat-chaude.jpg',
+  // infusion
+  'infusion.jpg',
+  // drinks
+  'soda.png',
+  // matcha
+  'matcha.png',
+
   // Smoothie
   '20250712_1447_Fruit Smoothie Menu_remix_01jzze2gcde948n6necjx22bg6-min.png',
   // Jus
@@ -35,19 +42,10 @@ const images = [
   // Fraputchino
   '20250712_1429_Frappuccino Delight_remix_01jzzd4gr8fyvr1mnsafk1rke8-min.png',
   // Bubble-yoyo-stick
-  'bubble.jpg',
+  'detox.jpg',
   // Paincackes
-  '20250712_1512_Textless Pancake Menu_remix_01jzzffevyfe29cm4dg18evc00-min.png',
-  // Pain perdu
-  'painperdu.jpg',
-  // Crêpe
-  'crepe.jpg',
-  // Crêpe salé
-  '20250712_1551_Text-Free Crepe Menu_remix_01jzzhs6xteh3tt2cvd1cerped-min.png',
-  // Gaufre
-  '20250712_1516_Waffle Plate Delight_remix_01jzzfq7q1edmah7njt249nea6-min.png',
-  // Omelette
-  '20250712_1554_Omelette and Bread_remix_01jzzhyf9wfyrtmt2ardkx6se6-min.png'
+  'mojito.png',
+ 
 
 ];
 
@@ -57,10 +55,10 @@ function getEncodedImageUrl(filename) {
 }
 
 function Logo({ isHome = false }) {
-  const logoSrc = isHome ? "/logohome.png" : "/logo.png";
+  const logoSrc = "/vagary-logo.png";
   return (
     <div className="logo-container">
-      <img src={logoSrc} alt="Logo" className="main-logo" />
+      <img src={logoSrc} alt="Vagary Logo" className="main-logo" />
     </div>
   );
 }
@@ -68,16 +66,28 @@ function Logo({ isHome = false }) {
 function MenuPage({ menu, category, bgImage }) {
   const navigate = useNavigate();
   if (!menu[category]) return <div>Catégorie introuvable.</div>;
+  const bgImageUrl = getEncodedImageUrl(bgImage);
   return (
-    <div className="menu-bg" style={{backgroundImage: `url(${getEncodedImageUrl(bgImage)})`}}>
+    <div className="menu-bg" style={{'--bg-image': `url(${bgImageUrl})`, backgroundImage: `url(${bgImageUrl})`}}>
       <div className="menu-overlay">
         <Logo />
         <h1 className="menu-title">{category}</h1>
         <div className="menu-list">
           {menu[category].map((item, idx) => (
             <div className="menu-item" key={idx}>
-              <span className="item-name">{item.item}</span>
-              <span className="item-price">{item.price}</span>
+              <div className="item-top">
+                <span className="item-name">{item.item}</span>
+                <span className="item-price">{item.price}</span>
+              </div>
+              {item.ingredients && item.ingredients.length > 0 && (
+                <div className="ingredients-list">
+                  {item.ingredients.map((ingredient, ingIdx) => (
+                    <span key={ingIdx} className="ingredient-tag">
+                      {ingredient}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -94,7 +104,6 @@ function Home({ menu }) {
   return (
     <div className="home-bg">
       <Logo isHome={true} />
-      <h1 className="home-title">PAPOTER COFFEE SHOP</h1>
       <div className="category-list">
         {categories.map((cat, idx) => (
           <Link className="category-link" to={`/menu/${encodeURIComponent(cat)}`} key={cat}>
@@ -114,7 +123,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/menu.json')
+    fetch('/menu-vagary.json')
       .then(res => res.json())
       .then(data => { setMenu(data); setLoading(false); })
       .catch(err => { setError(err.message); setLoading(false); });

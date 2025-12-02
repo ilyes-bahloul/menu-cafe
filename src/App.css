@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
  
-  text-align: center;
+
 }
 
 .logo {
@@ -53,16 +53,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.menu-bg::after {
+  content: '';
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--bg-image);
+  filter: blur(8px);
+  z-index: 0;
+  pointer-events: none;
 }
 .menu-bg::before {
   content: '';
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(20, 30, 38, 0.55);
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 .menu-overlay {
@@ -71,7 +86,7 @@
   padding: 3rem 2rem;
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   min-height: 80vh;
   display: flex;
@@ -80,6 +95,7 @@
   align-items: stretch;
   z-index: 1;
 }
+
 .menu-title {
   color: #fff;
   font-size: 2.2rem;
@@ -88,41 +104,95 @@
   text-align: center;
   letter-spacing: 2px;
 }
+
 .menu-list {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
-  max-height: 55vh;
+  max-height: 60vh;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #fff #222;
+  padding-right: 0.5rem;
 }
+
 .menu-list::-webkit-scrollbar {
   width: 6px;
 }
+
 .menu-list::-webkit-scrollbar-thumb {
   background: #fff8;
   border-radius: 4px;
 }
+
 .menu-list::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .menu-item {
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.item-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 0.5rem;
-  color: #fff;
-  font-size: 1.15rem;
-  font-weight: 500;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
+
 .item-name {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #fff;
+  flex: 1;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
+
 .item-price {
-  font-family: monospace;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #f5e3d7;
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredient-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.ingredient-tag:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .menu-nav {
   display: flex;
@@ -216,7 +286,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.7rem;
   margin-top: 0.5rem;
   max-width: 220px;
   max-height: 120px;
@@ -248,8 +318,34 @@
     max-height: 60vh;
   }
   .menu-item {
-    font-size: 0.98rem;
-    padding-bottom: 0.3rem;
+    padding: 1rem;
+  }
+  
+  .item-name {
+    font-size: 1.05rem;
+  }
+  
+  .item-price {
+    font-size: 1rem;
+  }
+  
+  .ingredient-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+  
+  .menu-overlay {
+    padding: 2rem 1.5rem;
+    max-width: 95vw;
+  }
+  
+  .menu-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .menu-list {
+    gap: 1.2rem;
   }
   .menu-nav button {
     font-size: 0.95em;
@@ -284,8 +380,8 @@
   }
   
   .main-logo {
-    max-width: 340px;
-    max-height: 280px;
-    margin-bottom: -3.2vh;
+    max-width: 180px;
+    max-height: 100px;
+    margin-bottom: 1rem;
   }
 }
