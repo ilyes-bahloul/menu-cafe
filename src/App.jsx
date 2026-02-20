@@ -110,7 +110,7 @@ function Welcome() {
           <div className="welcome-ramathan-wrap">
             <img src="/ramathan.png" alt="" className="welcome-ramathan" />
           </div>
-          <Link to="/home" className="welcome-btn">Go to menu</Link>
+          <Link to="/home" className="welcome-btn">Voir le menu</Link>
         </div>
         <footer className="welcome-footer">
           <Logo logoSrc="/goldenlogo.png" />
