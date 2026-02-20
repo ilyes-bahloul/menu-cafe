@@ -54,8 +54,7 @@ function getEncodedImageUrl(filename) {
   return '/' + filename.split('/').map(encodeURIComponent).join('/');
 }
 
-function Logo({ isHome = false }) {
-  const logoSrc = "/vagary-logo.png";
+function Logo({ isHome = false, logoSrc = "/vagary-logo.png" }) {
   return (
     <div className="logo-container">
       <img src={logoSrc} alt="Vagary Logo" className="main-logo" />
@@ -99,6 +98,28 @@ function MenuPage({ menu, category, bgImage }) {
   );
 }
 
+function Welcome() {
+  return (
+    <div className="welcome-screen">
+      <div className="welcome-bg" />
+      <div className="welcome-content">
+        <header className="welcome-header">
+          <img src="/motif welcome@3x.png" alt="" className="welcome-motif" />
+        </header>
+        <div className="welcome-cta">
+          <div className="welcome-ramathan-wrap">
+            <img src="/ramathan.png" alt="" className="welcome-ramathan" />
+          </div>
+          <Link to="/home" className="welcome-btn">Go to menu</Link>
+        </div>
+        <footer className="welcome-footer">
+          <Logo logoSrc="/goldenlogo.png" />
+        </footer>
+      </div>
+    </div>
+  );
+}
+
 function Home({ menu }) {
   const categories = Object.keys(menu);
   return (
@@ -136,7 +157,8 @@ function App() {
 
   return (
       <Routes>
-        <Route path="/" element={<Home menu={menu} />} />
+        <Route path="/" element={<Welcome />} />
+        <Route path="/home" element={<Home menu={menu} />} />
         <Route path="/menu/:category" element={
           <CategoryWrapper menu={menu} categories={categories} />
         } />
