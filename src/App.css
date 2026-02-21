@@ -213,6 +213,31 @@
   background: #f5e3d7;
 }
 
+/* Special Ramadan – menu page */
+.menu-bg--ramadan .menu-overlay--ramadan {
+  border: 2px solid rgba(201, 162, 39, 0.5);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 0 0 1px rgba(201, 162, 39, 0.2);
+}
+.menu-title--ramadan {
+  color: #d4af37 !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 3px;
+}
+.menu-item--ramadan {
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 14px;
+}
+.menu-item--ramadan:hover {
+  background: rgba(201, 162, 39, 0.14);
+  border-color: rgba(201, 162, 39, 0.5);
+}
+.item-price--ramadan {
+  color: #d4af37 !important;
+  font-weight: 700;
+}
+
 /* Welcome screen */
 .welcome-screen {
   position: relative;
@@ -389,6 +414,35 @@
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
+/* Special Ramadan – home card (first in list) */
+.category-card--ramadan {
+  position: relative;
+  border: 3px solid #c9a227;
+  box-shadow: 0 6px 24px rgba(201, 162, 39, 0.35), inset 0 0 0 1px rgba(255,255,255,0.08);
+  min-height: 130px;
+}
+.category-card--ramadan span:last-of-type {
+  background: linear-gradient(to top, rgba(20, 30, 38, 0.92), rgba(35, 61, 58, 0.85));
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 2px;
+}
+.category-card--ramadan:hover {
+  box-shadow: 0 8px 32px rgba(201, 162, 39, 0.45);
+  border-color: #d4af37;
+}
+.category-card-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #c9a227;
+  color: #1a1508;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 .home-bg {
   box-shadow: none !important;
@@ -490,6 +544,17 @@
     height: 80px;
     border-radius: 10px;
     font-size: 1rem;
+  }
+  .category-card--ramadan {
+    min-height: 88px;
+    height: auto;
+    padding-top: 1.75rem;
+  }
+  .category-card-badge {
+    top: 0.35rem;
+    right: 0.35rem;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
   }
   .category-card span {
     font-size: 1rem;

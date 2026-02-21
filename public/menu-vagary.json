@@ -1,5 +1,18 @@
 {
-  
+  "Special Ramadan": [
+    {
+      "item": "Bouza",
+      "price": "10 dt"
+    },
+    {
+      "item": "Chicha",
+      "price": "20 dt"
+    },
+    {
+      "item": "Jeux de cartes",
+      "price": "10 dt"
+    }
+  ],
   "Brunch": [
     {
         "item": "Brunchy lovers",
