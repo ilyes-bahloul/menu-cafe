@@ -326,6 +326,7 @@
 }
 .welcome-footer .logo-container {
   padding: 0.5rem;
+  width: fit-content;
 }
 .welcome-footer .main-logo {
   max-width: 140px;
