@@ -1,22 +1,23 @@
 {
+
   "Brunch": [
     {
-        "item": "Brunchy lovers",
-        "price": "17 dt",
-        "ingredients": ["pancake", "œuf plat", "bacon", "fromage frais a l'aneth", "roquette"]
-      },
-      {
-        "item": "Avocado toast",
-        "price": "20 dt",
-        "ingredients": ["pain complet", "œufs pochés", "guacamole", "bacon", "oignons pickles", "roqette", "sauce hollandaise"]
-      },
-      {
-        "item": "Bonjour vagary",
-        "price": "19 dt",
-        "ingredients": ["omelette", "ricotta", "champignons", "tomates cerises", "roquette", "courgette fritte", "crème truffe", "salade"]
-      },
+      "item": "Brunchy lovers",
+      "price": "17 dt",
+      "ingredients": ["pancake", "œuf plat", "bacon", "fromage frais a l'aneth", "roquette"]
+    },
     {
-      "item": "Wrapy viande hachèe",
+      "item": "Avocado toast",
+      "price": "20 dt",
+      "ingredients": ["pain complet", "œufs pochés", "guacamole", "bacon", "oignons pickles", "roqette", "sauce hollandaise"]
+    },
+    {
+      "item": "Bonjour vagary",
+      "price": "19 dt",
+      "ingredients": ["omelette", "ricotta", "champignons", "tomates cerises", "roquette", "courgette fritte", "crème truffe", "salade"]
+    },
+    {
+      "item": "Wrapy viande hachée",
       "price": "16 dt",
       "ingredients": ["une fine galette", "viande hachée", "œufs brouillés", "sauce piquante douce", "fromage cheddar", "potatos"]
     },
@@ -86,6 +87,38 @@
       "ingredients": ["banane caramélisée", "noisette concassée", "boule de glace"]
     }
   ],
+  "Petit-déjeuner": [
+    {
+      "item": "Express",
+      "price": "9.5 dt",
+      "ingredients": ["Café", "1/2 eau", "Jus", "Croissant ou pain au chocolat"]
+    },
+    {
+      "item": "Le Parisien",
+      "price": "26 dt",
+      "ingredients": ["Café", "1/2 eau", "Jus", "Beurre", "confiture", "miel", "Croissant ou pain au chocolat", "Omelette ou œufs brouillés", "Charcuterie", "fromage", "jambon", "Mini crêpe ou pain cake"]
+    },
+    {
+      "item": "Healthy",
+      "price": "28 dt",
+      "ingredients": ["Café", "1/2 eau", "Detox", "Energie bowl", "Omelette ou œufs brouillés", "Toast bruschetta"]
+    },
+    {
+      "item": "Le Tunisien",
+      "price": "27 dt",
+      "ingredients": ["Café", "1/2 eau", "Jus", "Beurre", "confiture", "miel", "huile d'olive", "hrissa", "Ojja mergez", "mlewi"]
+    },
+    {
+      "item": "Vagary (2 personnes)",
+      "price": "38 dt",
+      "ingredients": ["2 cafés", "1L d'eau", "2 jus frais", "Beurre", "confiture", "chocolat", "Charcuterie", "fromage", "2 salades de fruits", "2 omelettes ou œufs brouillés", "2 mini crêpes ou pains cakes"]
+    },
+    {
+      "item": "Le duo Matinal Signature (2 personnes)",
+      "price": "44 dt",
+      "ingredients": ["2 cafés", "1 L d'eau", "2 jus frais", "2 Croissant ou pain au chocolat", "Beurre", "confiture", "chocolat", "Charcuterie", "fromage", "Assiette de fruits", "2 Brochettes pain cake", "2 Mini tacos ou polet", "2 omelettes ou œufs brouillés", "2 Pain à l'ail au fromage"]
+    }
+  ],
   "Burger": [
     {
       "item": "Classic burger",
@@ -125,6 +158,38 @@
       "ingredients": ["Laitue", "roquette", "tomate cerises", "Crevettes cuites", "avocat", "ananas", "sauce salade"]
     }
   ],
+  "Pâtes": [
+    {
+      "item": "Pâtes Bianca",
+      "price": "23 dt",
+      "ingredients": ["Poulet", "champignons", "parmesan", "crème liquide", "noix de muscade", "basilic"]
+    },
+    {
+      "item": "Pâtes puttanesca",
+      "price": "23 dt",
+      "ingredients": ["Sauce tomate", "thon", "olives slays", "piment de Cayenne", "basilic", "câpres"]
+    },
+    {
+      "item": "Pâtes 4 fromages",
+      "price": "28 dt",
+      "ingredients": ["Crème liquide", "parmesan", "gruyère", "gorgonzola"]
+    },
+    {
+      "item": "Pâtes Pesto",
+      "price": "36 dt",
+      "ingredients": ["Chevrette ou poulet", "crème liquide", "sauce pesto", "parmesan", "pistache"]
+    },
+    {
+      "item": "Pâtes bolognaise",
+      "price": "28 dt",
+      "ingredients": ["Sauce tomate", "viande hachée", "basilic", "parmesan"]
+    },
+    {
+      "item": "Pâtes aux fruits de mer",
+      "price": "38 dt",
+      "ingredients": ["Sauce au choix: blanche, rosée ou rouge"]
+    }
+  ],
   "Crêpes salées": [
     {
       "item": "Crêpe au thon",
@@ -143,19 +208,19 @@
     },
     {
       "item": "Crêpe poulet rôtie",
-      "price": "13 dt",
+      "price": "16 dt",
       "ingredients": ["hrissa", "émincés de poulet grillé", "mozzarella"]
     }
   ],
   "Crêpes sucrées": [
     {
       "item": "Crêpe Nutella",
-      "price": "10 dt",
+      "price": "13 dt",
       "ingredients": ["Nutella"]
     },
     {
       "item": "Crêpe choco-banane",
-      "price": "13 dt",
+      "price": "16 dt",
       "ingredients": ["nutella", "banane"]
     },
     {
@@ -176,7 +241,33 @@
     {
       "item": "Crêpe suzette",
       "price": "14 dt",
-      "ingredients": ["Crêpe", "sauce orange", "zeste d'orange", "boule de glace"]
+      "ingredients": ["Crêpe sauce orange", "zeste d'orange", "boule de glace"]
+    }
+  ],
+  "Gaufres sucrées": [
+    {
+      "item": "Gaufre Nutella",
+      "price": "13 dt"
+    },
+    {
+      "item": "Gaufre choco-banane",
+      "price": "16 dt",
+      "ingredients": ["Nutella", "banane"]
+    },
+    {
+      "item": "Gaufre noisette",
+      "price": "17 dt",
+      "ingredients": ["Nutella", "crème noisette", "noix concassées"]
+    },
+    {
+      "item": "Gaufre pistache",
+      "price": "17 dt",
+      "ingredients": ["Nutella", "crème pistache"]
+    },
+    {
+      "item": "Gaufre Vagary",
+      "price": "18 dt",
+      "ingredients": ["Nutella", "banane", "fraise", "kiwi"]
     }
   ],
   "Café": [
@@ -189,15 +280,15 @@
       "price": "5 dt"
     },
     {
-      "item": "Café créme",
+      "item": "Café latté",
       "price": "7 dt"
     },
     {
-      "item": "American",
+      "item": "Americani",
       "price": "5 dt"
     },
     {
-      "item": "Chocolat au lait",
+      "item": "Moccacino",
       "price": "6 dt"
     },
     {
@@ -206,49 +297,29 @@
     },
     {
       "item": "Café turc",
-      "price": "8 dt"
-    },
-    {
-      "item": "Frappuccino Vanille",
       "price": "10 dt"
     },
     {
-      "item": "Chocolat noir",
-      "price": "11 dt"
+      "item": "Nescafé",
+      "price": "6 dt"
     },
     {
-      "item": "Noisette",
-      "price": "13 dt"
-    },
-    {
-      "item": "Nutella",
-      "price": "13 dt"
-    },
-    {
-      "item": "Oreo",
-      "price": "13 dt"
-    },
-    {
-      "item": "Spéculos",
-      "price": "13 dt"
-    },
-    {
-      "item": "Cramel",
-      "price": "12 dt"
+      "item": "Chocolat au lait",
+      "price": "6 dt"
     }
   ],
   "Thé": [
     {
       "item": "Thé vert",
-      "price": "5 dt"
+      "price": "6 dt"
     },
     {
       "item": "Thé pignons",
-      "price": "12 dt"
+      "price": "14 dt"
     },
     {
       "item": "Thé amandes",
-      "price": "8 dt"
+      "price": "10 dt"
     }
   ],
   "Iced Coffee": [
@@ -258,7 +329,7 @@
     },
     {
       "item": "Ice Latte",
-      "price": "7 dt"
+      "price": "9 dt"
     },
     {
       "item": "Spanish Latte",
@@ -266,27 +337,31 @@
     },
     {
       "item": "Mocha glacé",
-      "price": "9 dt"
+      "price": "12 dt"
     },
     {
       "item": "Caramel glacé",
-      "price": "12 dt"
+      "price": "14 dt"
     },
     {
       "item": "Tiramisu Coffee",
-      "price": "12 dt"
+      "price": "14 dt"
     },
     {
       "item": "Love Coffee glacé",
-      "price": "12 dt"
+      "price": "13 dt"
     },
     {
       "item": "Vagary Pistachio",
-      "price": "14 dt",
+      "price": "15 dt",
       "ingredients": ["shot espresso", "lait vanille", "lait concentré", "marshmellow", "mousse de cream"]
     }
   ],
   "Iced Tea": [
+    {
+      "item": "Fraise",
+      "price": "8 dt"
+    },
     {
       "item": "Pêche",
       "price": "8 dt"
@@ -306,84 +381,260 @@
     {
       "item": "Fruit de la passion",
       "price": "9 dt"
-    },
-    {
-      "item": "Fraise",
-      "price": "8 dt"
     }
   ],
   "Affogato Vagary": [
     {
       "item": "Vanille",
-      "price": "10 dt",
-      "ingredients": ["shot espresso glace vanille"]
+      "price": "10 dt"
     },
     {
       "item": "Noisette",
-      "price": "10 dt",
-      "ingredients": ["shot espresso glace noisette", "noisette concassée"]
+      "price": "11 dt"
     },
     {
       "item": "Pistachio",
-      "price": "10 dt",
-      "ingredients": ["shot espresso glace pistach", "pistach concassée"]
+      "price": "12 dt"
+    }
+  ],
+  "Frappuccino": [
+    {
+      "item": "Vanille",
+      "price": "10 dt"
+    },
+    {
+      "item": "Chocolat noir",
+      "price": "11 dt"
+    },
+    {
+      "item": "Noisette",
+      "price": "13 dt"
+    },
+    {
+      "item": "Nutella",
+      "price": "15 dt"
+    },
+    {
+      "item": "Oreo",
+      "price": "15 dt"
+    },
+    {
+      "item": "Spéculos",
+      "price": "15 dt"
     }
   ],
   "Vagary Coffee": [
     {
       "item": "Vagary Noisette",
-      "price": "12 dt",
-      "ingredients": ["pat noisette", "shot espresso", "lait", "noisette concassée"]
+      "price": "12 dt"
     },
     {
       "item": "Vagary Pistachio",
-      "price": "12 dt",
-      "ingredients": ["pat pistachio", "shot espresso", "lait", "pistache concassée"]
+      "price": "14 dt"
     },
     {
       "item": "Vagary Cacahuète",
-      "price": "10 dt",
-      "ingredients": ["beurre de cacahuète", "shot espresso", "lait"]
+      "price": "11 dt"
     }
   ],
   "Chocolat Chaud": [
     {
       "item": "Classic",
-      "price": "9 dt"
-    },
-    {
-      "item": "Choco Banane",
       "price": "10 dt"
     },
     {
-      "item": "Choco Oreo Nutella",
+      "item": "Choco Banane",
       "price": "12 dt"
     },
     {
-      "item": "Hot Nutella Spéculos",
+      "item": "Choco Oreo",
       "price": "13 dt"
+    },
+    {
+      "item": "Hot Nutella Spéculos",
+      "price": "14 dt"
     },
     {
       "item": "Choco Pistachio",
       "price": "14 dt"
     }
   ],
-  "Infusion": [
+  "Thé infusion": [
     {
-      "item": "Kyufi",
-      "price": "4 dt"
+      "item": "Fraise",
+      "price": "8 dt"
     },
     {
       "item": "Verveine",
-      "price": "4 dt"
+      "price": "8 dt"
     },
     {
-      "item": "Thé vert",
-      "price": "4 dt"
+      "item": "The vert",
+      "price": "8 dt"
     },
     {
       "item": "Camomille",
-      "price": "4 dt"
+      "price": "9 dt"
+    },
+    {
+      "item": "Kyufi",
+      "price": "9 dt"
+    }
+  ],
+  "Jus Fresh": [
+    {
+      "item": "Soleil au citron",
+      "price": "8 dt"
+    },
+    {
+      "item": "Douceur de fraise",
+      "price": "9 dt"
+    },
+    {
+      "item": "Délice citron amande",
+      "price": "13 dt"
+    },
+    {
+      "item": "Éclat vert kiwi",
+      "price": "14 dt"
+    },
+    {
+      "item": "Orange fraiche",
+      "price": "7 dt"
+    },
+    {
+      "item": "Rouge Échaudé",
+      "price": "15 dt"
+    },
+    {
+      "item": "Banana Berry Magic",
+      "price": "14 dt"
+    },
+    {
+      "item": "Tropical Solei",
+      "price": "14 dt"
+    },
+    {
+      "item": "Jus avocat",
+      "price": "15 dt"
+    }
+  ],
+  "Smoothies": [
+    {
+      "item": "Énergie Rouge",
+      "price": "15 dt"
+    },
+    {
+      "item": "Mango Milo Fusion",
+      "price": "15 dt"
+    },
+    {
+      "item": "Rouge Mentholé",
+      "price": "13 dt"
+    },
+    {
+      "item": "Rosée Gourmande",
+      "price": "11 dt"
+    },
+    {
+      "item": "Vagary",
+      "price": "18 dt"
+    }
+  ],
+  "Milkshake": [
+    {
+      "item": "Fraise",
+      "price": "14 dt"
+    },
+    {
+      "item": "Vanille",
+      "price": "13 dt"
+    },
+    {
+      "item": "Chocolat",
+      "price": "13 dt"
+    },
+    {
+      "item": "Oreo",
+      "price": "16 dt"
+    },
+    {
+      "item": "Nutella",
+      "price": "14 dt"
+    },
+    {
+      "item": "Spéculos",
+      "price": "15 dt"
+    },
+    {
+      "item": "Vagary Pistache",
+      "price": "19 dt"
+    }
+  ],
+  "Detox": [
+    {
+      "item": "Basilic Pomme Zen",
+      "price": "13 dt"
+    },
+    {
+      "item": "Énergie Tropicale",
+      "price": "14 dt"
+    },
+    {
+      "item": "Detox Exotique",
+      "price": "14 dt"
+    },
+    {
+      "item": "So Healthy",
+      "price": "11 dt"
+    }
+  ],
+  "Mojito": [
+    {
+      "item": "Classique",
+      "price": "10 dt"
+    },
+    {
+      "item": "Bleu",
+      "price": "13 dt"
+    },
+    {
+      "item": "Fraise",
+      "price": "13 dt"
+    },
+    {
+      "item": "Fruits des bois",
+      "price": "14 dt"
+    },
+    {
+      "item": "Mangue Passion",
+      "price": "16 dt"
+    },
+    {
+      "item": "Blue Ananas",
+      "price": "15 dt"
+    }
+  ],
+  "L'Heure du Matcha": [
+    {
+      "item": "Hot Matcha",
+      "price": "13 dt"
+    },
+    {
+      "item": "Le Rêve de Matcha",
+      "price": "15 dt"
+    },
+    {
+      "item": "Délice Matcha",
+      "price": "15 dt"
+    },
+    {
+      "item": "Fleur de Matcha",
+      "price": "15 dt"
+    },
+    {
+      "item": "Ice Matcha Latte",
+      "price": "13 dt"
     }
   ],
   "Boissons": [
@@ -398,182 +649,6 @@
     {
       "item": "Soda",
       "price": "5 dt"
-    },
-    {
-      "item": "Supplement",
-      "price": "2 dt"
-    }
-  ],
-  "Matcha": [
-    {
-      "item": "Hot Matcha",
-      "price": "12 dt"
-    },
-    {
-      "item": "Le Rêve de Matcha",
-      "price": "14 dt"
-    },
-    {
-      "item": "Délice Matcha",
-      "price": "14 dt"
-    },
-    {
-      "item": "Fleur de Matcha",
-      "price": "14 dt"
-    },
-    {
-      "item": "Ice Matcha Latte",
-      "price": "13 dt",
-      "ingredients": ["Manga", "pêche", "strawberry"]
-    }
-  ],
-  "Jus Fresh": [
-    {
-      "item": "Soleil au citron",
-      "price": "7 dt",
-      "ingredients": ["citronad menthe"]
-    },
-    {
-      "item": "Douceur de fraise",
-      "price": "8 dt"
-    },
-    {
-      "item": "Délice citron amande",
-      "price": "9 dt"
-    },
-    {
-      "item": "Éclat vert kiwi",
-      "price": "10 dt"
-    },
-    {
-      "item": "Orange fraîche",
-      "price": "7 dt"
-    },
-    {
-      "item": "Rouge Échaudé",
-      "price": "12 dt",
-      "ingredients": ["pêche framboise"]
-    },
-    {
-      "item": "Banana Berry Magic",
-      "price": "14 dt",
-      "ingredients": ["fruit rouge", "banane", "chia"]
-    },
-    {
-      "item": "Tropical Solei",
-      "price": "14 dt",
-      "ingredients": ["ananas", "noix de coco"]
-    },
-    {
-      "item": "Mangue fraîche",
-      "price": "13 dt",
-      "ingredients": ["manga passion"]
-    }
-  ],
-  "Smoothies": [
-    {
-      "item": "Énergie Rouge",
-      "price": "12 dt",
-      "ingredients": ["fraise", "ananas", "fruit de la passion"]
-    },
-    {
-      "item": "Mango Milo Fusion",
-      "price": "13 dt",
-      "ingredients": ["manga", "melon", "chia"]
-    },
-    {
-      "item": "Rouge Mentholé",
-      "price": "12 dt",
-      "ingredients": ["citron", "menthe", "fruit rouge"]
-    },
-    {
-      "item": "Rosée Gourmande",
-      "price": "11 dt",
-      "ingredients": ["fraise", "yaourt fraise", "rose"]
-    },
-    {
-      "item": "Vagary",
-      "price": "14 dt",
-      "ingredients": ["avocat", "banane", "chia", "lait d'amande"]
-    }
-  ],
-  "Milkshake": [
-    {
-      "item": "Fraise",
-      "price": "10 dt"
-    },
-    {
-      "item": "Vanille",
-      "price": "10 dt"
-    },
-    {
-      "item": "Chocolat",
-      "price": "12 dt"
-    },
-    {
-      "item": "Oreo",
-      "price": "13 dt"
-    },
-    {
-      "item": "Nutella",
-      "price": "13 dt"
-    },
-    {
-      "item": "Spéculos",
-      "price": "14 dt"
-    },
-    {
-      "item": "Vagary Pistache",
-      "price": "15 dt"
-    },
-    {
-      "item": "Noisette",
-      "price": "13 dt"
-    }
-  ],
-  "Detox": [
-    {
-      "item": "Basilic Pomme Zen",
-      "price": "11 dt",
-      "ingredients": ["pomme concombre basilic"]
-    },
-    {
-      "item": "Énergie Tropicale",
-      "price": "13 dt",
-      "ingredients": ["kiwi ananas menthe"]
-    },
-    {
-      "item": "Detox Exotique",
-      "price": "12 dt",
-      "ingredients": ["ananas citron menthe gingembre"]
-    },
-    {
-      "item": "So Healthy",
-      "price": "10 dt",
-      "ingredients": ["fraise betterave carotte"]
-    }
-  ],
-  "Mojito": [
-    {
-      "item": "Classique",
-      "price": "10 dt"
-    },
-    {
-      "item": "Bleu",
-      "price": "12 dt"
-    },
-    {
-      "item": "Fruit rouges",
-      "price": "13 dt"
-    },
-    {
-      "item": "Blue ananas",
-      "price": "14 dt"
-    },
-    {
-      "item": "Mangue Passion",
-      "price": "15 dt"
     }
   ]
 }
-
