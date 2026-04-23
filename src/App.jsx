@@ -62,28 +62,24 @@ function Logo({ isHome = false, logoSrc = "/vagary-logo.png" }) {
   );
 }
 
-const NO_BACKGROUND_CATEGORIES = ['Special Ramadan'];
-const SPECIAL_RAMADAN = 'Special Ramadan';
 
-function MenuPage({ menu, category, bgImage, noBackground }) {
+
+function MenuPage({ menu, category, bgImage }) {
   const navigate = useNavigate();
   if (!menu[category]) return <div>Catégorie introuvable.</div>;
-  const isSpecialRamadan = category === SPECIAL_RAMADAN;
-  const bgImageUrl = noBackground ? null : getEncodedImageUrl(bgImage);
-  const bgStyle = noBackground
-    ? { backgroundColor: '#233d3a', backgroundImage: 'none', '--bg-image': 'none' }
-    : { '--bg-image': `url(${bgImageUrl})`, backgroundImage: `url(${bgImageUrl})` };
+  const bgImageUrl = getEncodedImageUrl(bgImage);
+  const bgStyle = { '--bg-image': `url(${bgImageUrl})`, backgroundImage: `url(${bgImageUrl})` };
   return (
-    <div className={`menu-bg ${isSpecialRamadan ? 'menu-bg--ramadan' : ''}`} style={bgStyle}>
-      <div className={`menu-overlay ${isSpecialRamadan ? 'menu-overlay--ramadan' : ''}`}>
+    <div className="menu-bg" style={bgStyle}>
+      <div className="menu-overlay">
         <Logo />
-        <h1 className={`menu-title ${isSpecialRamadan ? 'menu-title--ramadan' : ''}`}>{category}</h1>
+        <h1 className="menu-title">{category}</h1>
         <div className="menu-list">
           {menu[category].map((item, idx) => (
-            <div className={`menu-item ${isSpecialRamadan ? 'menu-item--ramadan' : ''}`} key={idx}>
+            <div className="menu-item" key={idx}>
               <div className="item-top">
                 <span className="item-name">{item.item}</span>
-                <span className={`item-price ${isSpecialRamadan ? 'item-price--ramadan' : ''}`}>{item.price}</span>
+                <span className="item-price">{item.price}</span>
               </div>
               {item.ingredients && item.ingredients.length > 0 && (
                 <div className="ingredients-list">
@@ -114,9 +110,7 @@ function Welcome() {
           <img src="/motif welcome@3x.png" alt="" className="welcome-motif" />
         </header>
         <div className="welcome-cta">
-          <div className="welcome-ramathan-wrap">
-            <img src="/ramathan.png" alt="" className="welcome-ramathan" />
-          </div>
+          
           <Link to="/home" className="welcome-btn">Voir le menu</Link>
         </div>
         <footer className="welcome-footer">
@@ -129,26 +123,15 @@ function Welcome() {
 
 function Home({ menu }) {
   const categories = Object.keys(menu);
-  const sortedCategories = [...categories].sort((a, b) => {
-    if (a === SPECIAL_RAMADAN) return -1;
-    if (b === SPECIAL_RAMADAN) return 1;
-    return 0;
-  });
   return (
     <div className="home-bg">
       <Logo isHome={true} />
       <div className="category-list">
-        {sortedCategories.map((cat, idx) => {
-          const isSpecialRamadan = cat === SPECIAL_RAMADAN;
-          const noPicture = NO_BACKGROUND_CATEGORIES.includes(cat);
-          const imageIdx = sortedCategories.slice(0, idx).filter(c => c !== SPECIAL_RAMADAN).length;
-          const cardStyle = noPicture
-            ? { backgroundColor: '#233d3a', backgroundImage: 'none' }
-            : { backgroundImage: `url(${getEncodedImageUrl(images[imageIdx % images.length])})` };
+        {categories.map((cat, idx) => {
+          const cardStyle = { backgroundImage: `url(${getEncodedImageUrl(images[idx % images.length])})` };
           return (
             <Link className="category-link" to={`/menu/${encodeURIComponent(cat)}`} key={cat}>
-              <div className={`category-card ${isSpecialRamadan ? 'category-card--ramadan' : ''}`} style={cardStyle}>
-                {isSpecialRamadan && <span className="category-card-badge">Spécial</span>}
+              <div className="category-card" style={cardStyle}>
                 <span>{cat}</span>
               </div>
             </Link>
@@ -190,9 +173,8 @@ function App() {
 function CategoryWrapper({ menu, categories }) {
   const { category } = useParams();
   const idx = categories.findIndex(cat => cat === category);
-  const noBackground = NO_BACKGROUND_CATEGORIES.includes(category);
-  const bgImage = noBackground ? null : images[idx % images.length];
-  return <MenuPage menu={menu} category={category} bgImage={bgImage} noBackground={noBackground} />;
+  const bgImage = images[idx % images.length];
+  return <MenuPage menu={menu} category={category} bgImage={bgImage} />;
 }
 
 export default App;
