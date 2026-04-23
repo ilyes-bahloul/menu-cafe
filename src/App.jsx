@@ -6,14 +6,17 @@ import './App.css';
 const images = [
   // Brunch (position 0)
   'breackfast.jpg',
+  'breackfast.png',
   // Burger (position 1 - slot 2)
   'burger.jpg',
   // Salades (position 2 - slot 3)
   'salade.jpg',
+  'pates.png',
   // Crêpes salées (position 3 - slot 4)
   'crepe sale.jpg',
   // Crêpes sucrées (position 4)
   'crepe.jpg',
+  'gauffre.png',
   // Café (position 5)
   '20250712_1418_Coffee Menu Closeup_remix_01jzzcgx88ft4rqawf8z3xf10y-min.png',
   // Thé (position 6)
@@ -26,26 +29,21 @@ const images = [
   'affogato.jpg',
   // vagary coffee
   '20250712_1424_Text-Free Coffee Menu_remix_01jzzctmbsfs1tzs4tyb19bedz-min.png',
+  'vagary-coffe.png',
   // chocolat chaude
   'chocolat-chaude.jpg',
   // infusion
   'infusion.jpg',
-  // drinks
-  'soda.png',
-  // matcha
-  'matcha.png',
-
-  // Smoothie
-  '20250712_1447_Fruit Smoothie Menu_remix_01jzze2gcde948n6necjx22bg6-min.png',
-  // Jus
-  '20250712_1451_Smoothie Menu Display_remix_01jzze9kpvepyb2hfa06kbhk7n-min.png',
-  // Fraputchino
-  '20250712_1429_Frappuccino Delight_remix_01jzzd4gr8fyvr1mnsafk1rke8-min.png',
-  // Bubble-yoyo-stick
+  'jus.png',
+  'smoothy.png',
+  'milkshake.png',
   'detox.jpg',
-  // Paincackes
   'mojito.png',
  
+  // matcha
+  'matcha.png',
+  'soda.png',
+
 
 ];
 
