@@ -2,98 +2,95 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
 import './App.css';
 
-// Associe chaque catégorie à une image de fond compressée (avec -min.png)
-const images = [
-  // Brunch (position 0)
-  'breackfast.jpg',
-  'breackfast.png',
-  // Burger (position 1 - slot 2)
-  'burger.jpg',
-  // Salades (position 2 - slot 3)
-  'salade.jpg',
-  'pates.png',
-  // Crêpes salées (position 3 - slot 4)
-  'crepe sale.jpg',
-  // Crêpes sucrées (position 4)
-  'crepe.jpg',
-  'gauffre.png',
-  // Café (position 5)
-  '20250712_1418_Coffee Menu Closeup_remix_01jzzcgx88ft4rqawf8z3xf10y-min.png',
-  // Thé (position 6)
-  'the.jpg',
-  // iced coffee
-  'icedcoffe.png',
-  // iced tea
-  'iced-tea.jpg',
-  // affogato
-  'affogato.jpg',
-  // vagary coffee
-  '20250712_1424_Text-Free Coffee Menu_remix_01jzzctmbsfs1tzs4tyb19bedz-min.png',
-  'vagary-coffe.png',
-  // chocolat chaude
-  'chocolat-chaude.jpg',
-  // infusion
-  'infusion.jpg',
-  'jus.png',
-  'smoothy.png',
-  'milkshake.png',
-  'detox.jpg',
-  'mojito.png',
- 
-  // matcha
-  'matcha.png',
-  'soda.png',
-
-
-];
-
-function getEncodedImageUrl(filename) {
-  // Encode chaque partie séparément pour éviter les problèmes avec les slashs
+// L'image de chaque catégorie vient maintenant du JSON (clé "image"),
+// plus d'association par position : ajouter ou déplacer une catégorie
+// ne décale plus les visuels.
+function imageUrl(filename) {
+  if (!filename) return null;
   return '/' + filename.split('/').map(encodeURIComponent).join('/');
 }
 
-function Logo({ isHome = false, logoSrc = "/vagary-logo.png" }) {
+function Ornament({ className = '' }) {
   return (
-    <div className="logo-container">
-      <img src={logoSrc} alt="Vagary Logo" className="main-logo" />
-    </div>
+    <svg className={`ornament ${className}`} viewBox="0 0 120 12" aria-hidden="true">
+      <path d="M0 6h44" />
+      <path d="M76 6h44" />
+      <path d="M60 1.5 64.5 6 60 10.5 55.5 6z" />
+    </svg>
   );
 }
 
+function Price({ value }) {
+  return <span className="item-price">{value}</span>;
+}
 
-
-function MenuPage({ menu, category, bgImage }) {
-  const navigate = useNavigate();
-  if (!menu[category]) return <div>Catégorie introuvable.</div>;
-  const bgImageUrl = getEncodedImageUrl(bgImage);
-  const bgStyle = { '--bg-image': `url(${bgImageUrl})`, backgroundImage: `url(${bgImageUrl})` };
+function MenuItem({ entry }) {
+  const hasIngredients = entry.ingredients && entry.ingredients.length > 0;
   return (
-    <div className="menu-bg" style={bgStyle}>
-      <div className="menu-overlay">
-        <Logo />
-        <h1 className="menu-title">{category}</h1>
-        <div className="menu-list">
-          {menu[category].map((item, idx) => (
-            <div className="menu-item" key={idx}>
-              <div className="item-top">
-                <span className="item-name">{item.item}</span>
-                <span className="item-price">{item.price}</span>
-              </div>
-              {item.ingredients && item.ingredients.length > 0 && (
-                <div className="ingredients-list">
-                  {item.ingredients.map((ingredient, ingIdx) => (
-                    <span key={ingIdx} className="ingredient-tag">
-                      {ingredient}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
+    <li className="menu-item">
+      <div className="item-top">
+        <span className="item-name">{entry.item}</span>
+        <span className="item-leader" aria-hidden="true" />
+        <Price value={entry.price} />
+      </div>
+      {hasIngredients && (
+        <p className="item-ingredients">{entry.ingredients.join(' · ')}</p>
+      )}
+    </li>
+  );
+}
+
+function MenuPage({ menu }) {
+  const { category } = useParams();
+  const navigate = useNavigate();
+  const section = menu[category];
+
+  if (!section) {
+    return (
+      <div className="page page--empty">
+        <p>Catégorie introuvable.</p>
+        <Link className="btn-ghost" to="/home">Retour au menu</Link>
+      </div>
+    );
+  }
+
+  const hero = imageUrl(section.image);
+
+  return (
+    <div className="page menu-page">
+      {hero && (
+        <div className="menu-hero">
+          <img src={hero} alt="" className="menu-hero-img" loading="eager" />
+          <div className="menu-hero-veil" />
+          <button className="btn-back" onClick={() => navigate(-1)} aria-label="Retour">
+            <span aria-hidden="true">←</span>
+          </button>
+          <div className="menu-hero-title">
+            <Ornament />
+            <h1>{category}</h1>
+          </div>
+        </div>
+      )}
+
+      <div className="menu-sheet">
+        <ul className="menu-list">
+          {section.items.map((entry, idx) => (
+            <MenuItem entry={entry} key={`${entry.item}-${idx}`} />
           ))}
-        </div>
-        <div className="menu-nav">
-          <button onClick={() => navigate(-1)}>Retour</button>
-        </div>
+        </ul>
+
+        {section.supplements && (
+          <section className="supplements">
+            <h2 className="supplements-title">{section.supplements.title}</h2>
+            <ul className="menu-list menu-list--compact">
+              {section.supplements.items.map((entry, idx) => (
+                <MenuItem entry={entry} key={`supp-${entry.item}-${idx}`} />
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <Link className="btn-ghost" to="/home">Toutes les catégories</Link>
       </div>
     </div>
   );
@@ -101,19 +98,13 @@ function MenuPage({ menu, category, bgImage }) {
 
 function Welcome() {
   return (
-    <div className="welcome-screen">
-      <div className="welcome-bg" />
-      <div className="welcome-content">
-        <header className="welcome-header">
-          <img src="/motif welcome@3x.png" alt="" className="welcome-motif" />
-        </header>
-        <div className="welcome-cta">
-          
-          <Link to="/home" className="welcome-btn">Voir le menu</Link>
-        </div>
-        <footer className="welcome-footer">
-          <Logo logoSrc="/goldenlogo.png" />
-        </footer>
+    <div className="page welcome">
+      <div className="welcome-inner">
+        <img src="/motif welcome@3x.png" alt="" className="welcome-motif" />
+        <h1 className="welcome-name">VAGARY</h1>
+        <p className="welcome-tagline">Le temps d'un caprice</p>
+        <Ornament className="ornament--welcome" />
+        <Link to="/home" className="btn-gold">Voir le menu</Link>
       </div>
     </div>
   );
@@ -122,57 +113,77 @@ function Welcome() {
 function Home({ menu }) {
   const categories = Object.keys(menu);
   return (
-    <div className="home-bg">
-      <Logo isHome={true} />
-      <div className="category-list">
-        {categories.map((cat, idx) => {
-          const cardStyle = { backgroundImage: `url(${getEncodedImageUrl(images[idx % images.length])})` };
+    <div className="page home">
+      <header className="home-header">
+        <img src="/goldenlogo.png" alt="Vagary" className="home-logo" />
+        <Ornament />
+      </header>
+
+      <ul className="category-grid">
+        {categories.map((cat) => {
+          const section = menu[cat];
+          const count = section.items.length;
           return (
-            <Link className="category-link" to={`/menu/${encodeURIComponent(cat)}`} key={cat}>
-              <div className="category-card" style={cardStyle}>
-                <span>{cat}</span>
-              </div>
-            </Link>
+            <li key={cat}>
+              <Link className="category-card" to={`/menu/${encodeURIComponent(cat)}`}>
+                <img
+                  src={imageUrl(section.image)}
+                  alt=""
+                  className="category-img"
+                  loading="lazy"
+                />
+                <span className="category-veil" />
+                <span className="category-text">
+                  <span className="category-name">{cat}</span>
+                  <span className="category-count">{count} articles</span>
+                </span>
+              </Link>
+            </li>
           );
         })}
-      </div>
+      </ul>
+
+      <footer className="home-footer">
+        <Ornament />
+        <p>Le temps d'un caprice</p>
+      </footer>
     </div>
   );
 }
 
 function App() {
-  const [menu, setMenu] = useState({});
-  const [loading, setLoading] = useState(true);
+  const [menu, setMenu] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('/menu-vagary.json')
-      .then(res => res.json())
-      .then(data => { setMenu(data); setLoading(false); })
-      .catch(err => { setError(err.message); setLoading(false); });
+      .then((res) => {
+        if (!res.ok) throw new Error(`Menu indisponible (${res.status})`);
+        return res.json();
+      })
+      .then(setMenu)
+      .catch((err) => setError(err.message));
   }, []);
 
-  if (loading) return <div>Chargement du menu...</div>;
-  if (error) return <div>Erreur : {error}</div>;
+  if (error) {
+    return <div className="page page--empty"><p>Erreur : {error}</p></div>;
+  }
 
-  const categories = Object.keys(menu);
+  if (!menu) {
+    return (
+      <div className="page page--empty">
+        <div className="loader" aria-label="Chargement du menu" />
+      </div>
+    );
+  }
 
   return (
-      <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/home" element={<Home menu={menu} />} />
-        <Route path="/menu/:category" element={
-          <CategoryWrapper menu={menu} categories={categories} />
-        } />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/home" element={<Home menu={menu} />} />
+      <Route path="/menu/:category" element={<MenuPage menu={menu} />} />
+    </Routes>
   );
-}
-
-function CategoryWrapper({ menu, categories }) {
-  const { category } = useParams();
-  const idx = categories.findIndex(cat => cat === category);
-  const bgImage = images[idx % images.length];
-  return <MenuPage menu={menu} category={category} bgImage={bgImage} />;
 }
 
 export default App;
