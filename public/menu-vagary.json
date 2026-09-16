@@ -5,41 +5,89 @@
       {
         "item": "Petit-déjeuner Express",
         "price": "10 DT",
-        "ingredients": ["Café", "½ bouteille d'eau", "Jus", "Croissant au beurre ou pain au chocolat"]
+        "ingredients": [
+          "Café",
+          "½ bouteille d'eau",
+          "Jus",
+          "Croissant au beurre ou pain au chocolat"
+        ]
       },
       {
         "item": "Le Parisien",
         "price": "28 DT",
-        "ingredients": ["Café", "½ bouteille d'eau", "Beurre, confiture & miel", "Croissant au beurre ou pain au chocolat", "Omelette nature accompagnée de sa charcuterie", "Mini crêpe"]
+        "ingredients": [
+          "Café",
+          "½ bouteille d'eau",
+          "Beurre, confiture & miel",
+          "Croissant au beurre ou pain au chocolat",
+          "Omelette nature accompagnée de sa charcuterie",
+          "Mini crêpe"
+        ]
       },
       {
         "item": "Healthy",
         "price": "31 DT",
-        "ingredients": ["Café", "½ bouteille d'eau", "Jus citronnade-menthe", "Energy Bowl", "Œuf brouillé", "Toast bruschetta"]
-      },
-      {
-        "item": "Le Tunisien",
-        "price": "27 dt",
-        "ingredients": ["Café", "1/2 eau", "Jus", "Beurre", "confiture", "miel", "huile d'olive", "hrissa", "Ojja mergez", "mlewi"]
+        "ingredients": [
+          "Café",
+          "½ bouteille d'eau",
+          "Jus citronnade-menthe",
+          "Energy Bowl",
+          "Œuf brouillé",
+          "Toast bruschetta"
+        ]
       },
       {
         "item": "Vagary 2 personnes",
         "price": "41 DT",
-        "ingredients": ["2 cafés", "1 L d'eau", "2 jus frais", "Beurre, confiture & chocolat", "Charcuterie", "2 salades de fruits", "2 œufs brouillés", "2 croissants salés"]
+        "ingredients": [
+          "2 cafés",
+          "1 L d'eau",
+          "2 jus frais",
+          "Beurre, confiture & chocolat",
+          "Charcuterie",
+          "2 salades de fruits",
+          "2 œufs brouillés",
+          "2 croissants salés"
+        ]
       },
       {
         "item": "Duo matinale",
         "price": "56 DT",
-        "ingredients": ["2 cafés", "2 jus", "1 L d'eau", "2 croissants au beurre ou pains au chocolat", "Charcuterie & fromage", "2 salades de fruits", "2 omelettes", "2 mini tacos", "2 pains à l'ail au fromage", "2 mini pancakes ou crêpes", "2 croissants salés", "Mini ojja"]
+        "ingredients": [
+          "2 cafés",
+          "2 jus",
+          "1 L d'eau",
+          "2 croissants au beurre ou pain au chocolat",
+          "Charcuterie & fromage",
+          "2 salades de fruits",
+          "2 omelettes",
+          "2 mini tacos",
+          "2 pains à l'ail au fromage",
+          "2 mini pancakes ou crêpes",
+          "2 croissants salés",
+          "Mini ojja"
+        ]
       }
     ],
     "supplements": {
       "title": "Les suppléments",
       "items": [
-        { "item": "Mini omelette au fromage", "price": "4 DT" },
-        { "item": "Œuf brouillé au fromage", "price": "4 DT" },
-        { "item": "Œuf supplémentaire", "price": "2 DT" },
-        { "item": "Toast", "price": "5 DT" }
+        {
+          "item": "Mini omelette au fromage",
+          "price": "4 DT"
+        },
+        {
+          "item": "Œuf brouillé au fromage",
+          "price": "4 DT"
+        },
+        {
+          "item": "Œuf supplémentaire",
+          "price": "2 DT"
+        },
+        {
+          "item": "Toast",
+          "price": "5 DT"
+        }
       ]
     }
   },
@@ -49,87 +97,203 @@
       {
         "item": "Brunchy lovers",
         "price": "17 dt",
-        "ingredients": ["pancake", "œuf plat", "bacon", "fromage frais a l'aneth", "roquette"]
+        "ingredients": [
+          "pancake",
+          "œuf plat",
+          "bacon",
+          "fromage frais a l'aneth",
+          "roquette"
+        ]
       },
       {
         "item": "Avocado toast",
         "price": "20 dt",
-        "ingredients": ["pain complet", "œufs pochés", "guacamole", "bacon", "oignons pickles", "roqette", "sauce hollandaise"]
+        "ingredients": [
+          "pain complet",
+          "œufs pochés",
+          "guacamole",
+          "bacon",
+          "oignons pickles",
+          "roqette",
+          "sauce hollandaise"
+        ]
       },
       {
         "item": "Bonjour vagary",
         "price": "19 dt",
-        "ingredients": ["omelette", "ricotta", "champignons", "tomates cerises", "roquette", "courgette fritte", "crème truffe", "salade"]
+        "ingredients": [
+          "omelette",
+          "ricotta",
+          "champignons",
+          "tomates cerises",
+          "roquette",
+          "courgette fritte",
+          "crème truffe",
+          "salade"
+        ]
       },
       {
         "item": "Wrapy viande hachée",
         "price": "16 dt",
-        "ingredients": ["une fine galette", "viande hachée", "œufs brouillés", "sauce piquante douce", "fromage cheddar", "potatos"]
+        "ingredients": [
+          "une fine galette",
+          "viande hachée",
+          "œufs brouillés",
+          "sauce piquante douce",
+          "fromage cheddar",
+          "potatos"
+        ]
       },
       {
         "item": "Wrapy poulet crispy",
         "price": "14 dt",
-        "ingredients": ["une fine galette", "poulet crispy", "œufs brouillés", "sauce piquante douce", "fromage cheddar", "potatos"]
+        "ingredients": [
+          "une fine galette",
+          "poulet crispy",
+          "œufs brouillés",
+          "sauce piquante douce",
+          "fromage cheddar",
+          "potatos"
+        ]
       },
       {
         "item": "Bresaola toast",
         "price": "19 dt",
-        "ingredients": ["pain brioche maison", "fromage frais a l'aneth", "brisaola", "œufs pochés", "sauce hollandaise", "roquette", "tomate cerises"]
+        "ingredients": [
+          "pain brioche maison",
+          "fromage frais a l'aneth",
+          "brisaola",
+          "œufs pochés",
+          "sauce hollandaise",
+          "roquette",
+          "tomate cerises"
+        ]
       },
       {
         "item": "Salamon toast",
         "price": "22 dt",
-        "ingredients": ["Pain brioche maison", "saumon", "œufs pochés", "sauce hollandaise", "oignons caramélisés", "roquette", "tomate cerises"]
+        "ingredients": [
+          "Pain brioche maison",
+          "saumon",
+          "œufs pochés",
+          "sauce hollandaise",
+          "oignons caramélisés",
+          "roquette",
+          "tomate cerises"
+        ]
       },
       {
         "item": "Croissant au saumon",
         "price": "20 dt",
-        "ingredients": ["croissant", "saumon", "œufs brouillés", "fromage frais a l'aneth", "roquette", "tomate cerises", "avocat", "oignons pickles"]
+        "ingredients": [
+          "croissant",
+          "saumon",
+          "œufs brouillés",
+          "fromage frais a l'aneth",
+          "roquette",
+          "tomate cerises",
+          "avocat",
+          "oignons pickles"
+        ]
       },
       {
         "item": "Crispy waffle",
         "price": "18 dt",
-        "ingredients": ["gaufre salé", "poulet crispy", "sauce piquante douce", "roquette", "tomate cerises", "oignons pickles"]
+        "ingredients": [
+          "gaufre salé",
+          "poulet crispy",
+          "sauce piquante douce",
+          "roquette",
+          "tomate cerises",
+          "oignons pickles"
+        ]
       },
       {
         "item": "Tunisian",
         "price": "24 dt",
-        "ingredients": ["pate mlawi", "rfissa aux fruits secs", "ojja", "miel", "chamia", "dro3", "beurre", "confiture"]
+        "ingredients": [
+          "pate mlawi",
+          "rfissa aux fruits secs",
+          "ojja",
+          "miel",
+          "chamia",
+          "dro3",
+          "beurre",
+          "confiture"
+        ]
       },
       {
         "item": "Energy bowl",
         "price": "13 dt",
-        "ingredients": ["yaourt au chia", "granola", "fruits", "miel"]
+        "ingredients": [
+          "yaourt au chia",
+          "granola",
+          "fruits",
+          "miel"
+        ]
       },
       {
         "item": "Healthy pancake",
         "price": "23 dt",
-        "ingredients": ["pancake", "guacamole", "fromage frais a l'aneth", "roquette", "tomate cerises", "omelette", "champignons"]
+        "ingredients": [
+          "pancake",
+          "guacamole",
+          "fromage frais a l'aneth",
+          "roquette",
+          "tomate cerises",
+          "omelette",
+          "champignons"
+        ]
       },
       {
         "item": "Sweet waffle",
         "price": "18 dt",
-        "ingredients": ["nutella", "banane", "caraméle", "pépite de chocolat", "boule de glace"]
+        "ingredients": [
+          "nutella",
+          "banane",
+          "caraméle",
+          "pépite de chocolat",
+          "boule de glace"
+        ]
       },
       {
         "item": "Red toast",
         "price": "18 dt",
-        "ingredients": ["pain brioche maison", "fruits rouges", "boule glace", "caraméle"]
+        "ingredients": [
+          "pain brioche maison",
+          "fruits rouges",
+          "boule glace",
+          "caraméle"
+        ]
       },
       {
         "item": "Cool Pistachio",
         "price": "19 dt",
-        "ingredients": ["pain perdu", "crème pistache", "pistache concassée", "boule de glace"]
+        "ingredients": [
+          "pain perdu",
+          "crème pistache",
+          "pistache concassée",
+          "boule de glace"
+        ]
       },
       {
         "item": "Cool nuts",
         "price": "19 dt",
-        "ingredients": ["pain perdu", "crème noisette", "noisette concassée", "boule de glace"]
+        "ingredients": [
+          "pain perdu",
+          "crème noisette",
+          "noisette concassée",
+          "boule de glace"
+        ]
       },
       {
         "item": "Banana split",
         "price": "13 dt",
-        "ingredients": ["banane caramélisée", "noisette concassée", "boule de glace"]
+        "ingredients": [
+          "banane caramélisée",
+          "noisette concassée",
+          "boule de glace"
+        ]
       }
     ]
   },
@@ -139,22 +303,53 @@
       {
         "item": "Classic burger",
         "price": "19 dt",
-        "ingredients": ["laitue", "tomate", "oignons", "mayonnaise", "cornichon", "steak de bœuf 150g"]
+        "ingredients": [
+          "laitue",
+          "tomate",
+          "oignons",
+          "mayonnaise",
+          "cornichon",
+          "steak de bœuf 150g"
+        ]
       },
       {
         "item": "Cheesy meat burger",
         "price": "22 dt",
-        "ingredients": ["laitue", "tomate", "oignons", "mayonnaise", "cornichon", "steak de bœuf 150g", "cheddar"]
+        "ingredients": [
+          "laitue",
+          "tomate",
+          "oignons",
+          "mayonnaise",
+          "cornichon",
+          "steak de bœuf 150g",
+          "cheddar"
+        ]
       },
       {
         "item": "Chicken burger",
         "price": "18 dt",
-        "ingredients": ["laitue", "tomate", "oignons", "mayonnaise", "cornichon", "poulet", "cheddar"]
+        "ingredients": [
+          "laitue",
+          "tomate",
+          "oignons",
+          "mayonnaise",
+          "cornichon",
+          "poulet",
+          "cheddar"
+        ]
       },
       {
         "item": "Burger double viande",
         "price": "26 dt",
-        "ingredients": ["Laitue", "tomate", "oignons", "mayonnaise", "cornichon", "cheddar", "double steak de bœuf"]
+        "ingredients": [
+          "Laitue",
+          "tomate",
+          "oignons",
+          "mayonnaise",
+          "cornichon",
+          "cheddar",
+          "double steak de bœuf"
+        ]
       }
     ]
   },
@@ -164,17 +359,29 @@
       {
         "item": "Salade César",
         "price": "20 DT",
-        "ingredients": ["laitue", "tomate cerise", "poulet crispy", "pain croustillant", "copeaux de parmesan", "sauce césar"]
+        "ingredients": [
+          "laitue",
+          "tomate cerise",
+          "poulet crispy",
+          "pain croustillant",
+          "copeaux de parmesan",
+          "sauce césar"
+        ]
       },
       {
         "item": "Salade Exotique",
         "price": "28 DT",
-        "ingredients": ["laitue", "roquette", "tomate cerises", "poulet fumé", "amande effilée", "avocat", "ananas", "sauce balsamique", "copeaux de parmesan"]
-      },
-      {
-        "item": "Salade crevette et avocat",
-        "price": "22 dt",
-        "ingredients": ["Laitue", "roquette", "tomate cerises", "Crevettes cuites", "avocat", "ananas", "sauce salade"]
+        "ingredients": [
+          "laitue",
+          "roquette",
+          "tomate cerises",
+          "poulet fumé",
+          "amande effilée",
+          "avocat",
+          "ananas",
+          "sauce balsamique",
+          "copeaux de parmesan"
+        ]
       }
     ]
   },
@@ -184,32 +391,64 @@
       {
         "item": "Pâtes Bianca",
         "price": "23 dt",
-        "ingredients": ["Poulet", "champignons", "parmesan", "crème liquide", "noix de muscade", "basilic"]
+        "ingredients": [
+          "Poulet",
+          "champignons",
+          "parmesan",
+          "crème liquide",
+          "noix de muscade",
+          "basilic"
+        ]
       },
       {
         "item": "Pâtes puttanesca",
         "price": "23 dt",
-        "ingredients": ["Sauce tomate", "thon", "olives slays", "piment de Cayenne", "basilic", "câpres"]
+        "ingredients": [
+          "Sauce tomate",
+          "thon",
+          "olives slays",
+          "piment de Cayenne",
+          "basilic",
+          "câpres"
+        ]
       },
       {
         "item": "Pâtes 4 fromages",
         "price": "28 dt",
-        "ingredients": ["Crème liquide", "parmesan", "gruyère", "gorgonzola"]
+        "ingredients": [
+          "Crème liquide",
+          "parmesan",
+          "gruyère",
+          "gorgonzola"
+        ]
       },
       {
         "item": "Pâtes Pesto",
         "price": "36 dt",
-        "ingredients": ["Chevrette ou poulet", "crème liquide", "sauce pesto", "parmesan", "pistache"]
+        "ingredients": [
+          "Chevrette ou poulet",
+          "crème liquide",
+          "sauce pesto",
+          "parmesan",
+          "pistache"
+        ]
       },
       {
         "item": "Pâtes bolognaise",
         "price": "28 dt",
-        "ingredients": ["Sauce tomate", "viande hachée", "basilic", "parmesan"]
+        "ingredients": [
+          "Sauce tomate",
+          "viande hachée",
+          "basilic",
+          "parmesan"
+        ]
       },
       {
         "item": "Pâtes aux fruits de mer",
         "price": "38 dt",
-        "ingredients": ["Sauce au choix: blanche, rosée ou rouge"]
+        "ingredients": [
+          "Sauce au choix: blanche, rosée ou rouge"
+        ]
       }
     ]
   },
@@ -219,7 +458,11 @@
       {
         "item": "Crêpe au thon",
         "price": "14 DT",
-        "ingredients": ["hrissa", "thon", "mozzarella"]
+        "ingredients": [
+          "hrissa",
+          "thon",
+          "mozzarella"
+        ]
       },
       {
         "item": "Crêpe jambon & fromage",
@@ -228,26 +471,15 @@
       {
         "item": "Crêpe Spéciale",
         "price": "16 DT",
-        "ingredients": ["Thon", "jambon", "œuf"]
+        "ingredients": [
+          "Thon",
+          "jambon",
+          "œuf"
+        ]
       },
       {
         "item": "Crêpe Poulet",
         "price": "17 DT"
-      },
-      {
-        "item": "Crêpe façon fricassé",
-        "price": "15 dt",
-        "ingredients": ["hrissa", "thon", "olives", "œuf", "pommes de terres écrasé"]
-      },
-      {
-        "item": "Crêpe bolonaise",
-        "price": "16 dt",
-        "ingredients": ["sauce tomate", "viande haché", "mozzarella"]
-      },
-      {
-        "item": "Crêpe poulet rôtie",
-        "price": "16 dt",
-        "ingredients": ["hrissa", "émincés de poulet grillé", "mozzarella"]
       }
     ]
   },
@@ -257,12 +489,17 @@
       {
         "item": "Crêpe Nutella",
         "price": "16 DT",
-        "ingredients": ["Nutella"]
+        "ingredients": [
+          "Nutella"
+        ]
       },
       {
         "item": "Crêpe Choco-Banane",
         "price": "19 DT",
-        "ingredients": ["Nutella", "banane"]
+        "ingredients": [
+          "Nutella",
+          "banane"
+        ]
       },
       {
         "item": "Crêpe Fruits de saison & Nutella",
@@ -271,27 +508,10 @@
       {
         "item": "Crêpe Vagary",
         "price": "20 DT",
-        "ingredients": ["Nutella", "fruits secs"]
-      },
-      {
-        "item": "Crêpe fruité",
-        "price": "18 dt",
-        "ingredients": ["nutella", "banane", "fraise", "kiwi"]
-      },
-      {
-        "item": "Crêpe pistache",
-        "price": "17 dt",
-        "ingredients": ["nutella", "crème pistache", "pistache concassé"]
-      },
-      {
-        "item": "Crêpe noisette",
-        "price": "17 dt",
-        "ingredients": ["nutella", "crème noisette", "noisette concassé"]
-      },
-      {
-        "item": "Crêpe suzette",
-        "price": "14 dt",
-        "ingredients": ["Crêpe sauce orange", "zeste d'orange", "boule de glace"]
+        "ingredients": [
+          "Nutella",
+          "fruits secs"
+        ]
       }
     ]
   },
@@ -305,7 +525,10 @@
       {
         "item": "Gaufre Nutella Banane",
         "price": "18 DT",
-        "ingredients": ["Nutella", "banane"]
+        "ingredients": [
+          "Nutella",
+          "banane"
+        ]
       },
       {
         "item": "Gaufre Fruits de saison & Nutella",
@@ -314,137 +537,265 @@
       {
         "item": "Gaufre Vagary",
         "price": "20 DT",
-        "ingredients": ["Nutella", "fruits secs"]
-      },
-      {
-        "item": "Gaufre choco-banane",
-        "price": "16 dt",
-        "ingredients": ["Nutella", "banane"]
-      },
-      {
-        "item": "Gaufre noisette",
-        "price": "17 dt",
-        "ingredients": ["Nutella", "crème noisette", "noix concassées"]
-      },
-      {
-        "item": "Gaufre pistache",
-        "price": "17 dt",
-        "ingredients": ["Nutella", "crème pistache"]
+        "ingredients": [
+          "Nutella",
+          "fruits secs"
+        ]
       }
     ]
   },
   "Café": {
     "image": "20250712_1418_Coffee Menu Closeup_remix_01jzzcgx88ft4rqawf8z3xf10y-min.png",
     "items": [
-      { "item": "Express", "price": "4 dt" },
-      { "item": "Macchiato", "price": "5 dt" },
-      { "item": "Café latté", "price": "7 dt" },
-      { "item": "Americani", "price": "5 dt" },
-      { "item": "Moccacino", "price": "6 dt" },
-      { "item": "Cappuccino", "price": "7 dt" },
-      { "item": "Café turc", "price": "10 dt" },
-      { "item": "Nescafé", "price": "6 dt" },
-      { "item": "Chocolat au lait", "price": "6 dt" }
+      {
+        "item": "Express",
+        "price": "4 dt"
+      },
+      {
+        "item": "Macchiato",
+        "price": "5 dt"
+      },
+      {
+        "item": "Café latté",
+        "price": "7 dt"
+      },
+      {
+        "item": "Americani",
+        "price": "5 dt"
+      },
+      {
+        "item": "Moccacino",
+        "price": "6 dt"
+      },
+      {
+        "item": "Cappuccino",
+        "price": "7 dt"
+      },
+      {
+        "item": "Café turc",
+        "price": "10 dt"
+      },
+      {
+        "item": "Nescafé",
+        "price": "6 dt"
+      },
+      {
+        "item": "Chocolat au lait",
+        "price": "6 dt"
+      }
     ]
   },
   "Iced Coffee": {
     "image": "icedcoffe.png",
     "items": [
-      { "item": "Americano glacé", "price": "7 DT" },
-      { "item": "Iced Latte", "price": "10 DT" },
-      { "item": "Spanish Latte", "price": "12 DT" },
-      { "item": "Caramel glacé", "price": "16 DT" },
-      { "item": "Vague Vagary", "price": "18 DT" },
-      { "item": "Mocha glacé", "price": "12 dt" },
-      { "item": "Tiramisu Coffee", "price": "14 dt" },
-      { "item": "Love Coffee glacé", "price": "13 dt" },
       {
-        "item": "Vagary Pistachio",
-        "price": "15 dt",
-        "ingredients": ["shot espresso", "lait vanille", "lait concentré", "marshmellow", "mousse de cream"]
+        "item": "Americano glacé",
+        "price": "7 DT"
+      },
+      {
+        "item": "Iced Latte",
+        "price": "10 DT"
+      },
+      {
+        "item": "Spanish Latte",
+        "price": "12 DT"
+      },
+      {
+        "item": "Caramel glacé",
+        "price": "16 DT"
+      },
+      {
+        "item": "Vague Vagary",
+        "price": "18 DT"
       }
     ]
   },
   "Iced Tea": {
     "image": "iced-tea.jpg",
     "items": [
-      { "item": "Grenade", "price": "10 DT" },
-      { "item": "Pêche", "price": "10 DT" },
-      { "item": "Framboise", "price": "13 DT" },
-      { "item": "Mangue", "price": "14 DT" },
-      { "item": "Fruit de la passion", "price": "12 DT" },
-      { "item": "Fraise", "price": "8 dt" },
-      { "item": "Menthe citron", "price": "8 dt" }
+      {
+        "item": "Grenade",
+        "price": "10 DT"
+      },
+      {
+        "item": "Pêche",
+        "price": "10 DT"
+      },
+      {
+        "item": "Framboise",
+        "price": "13 DT"
+      },
+      {
+        "item": "Mangue",
+        "price": "14 DT"
+      },
+      {
+        "item": "Fruit de la passion",
+        "price": "12 DT"
+      },
+      {
+        "item": "Fraise",
+        "price": "8 dt"
+      }
     ]
   },
   "Affogato Vagary": {
     "image": "affogato.jpg",
     "items": [
-      { "item": "Vanille", "price": "10 DT" },
-      { "item": "Noisette", "price": "11 DT" },
-      { "item": "Pistache", "price": "12 DT" }
+      {
+        "item": "Vanille",
+        "price": "10 DT"
+      },
+      {
+        "item": "Noisette",
+        "price": "11 DT"
+      },
+      {
+        "item": "Pistache",
+        "price": "12 DT"
+      }
     ]
   },
   "Frappuccino": {
     "image": "20250712_1429_Frappuccino Delight_remix_01jzzd4gr8fyvr1mnsafk1rke8-min.png",
     "items": [
-      { "item": "Vanille", "price": "12 DT" },
-      { "item": "Chocolat blanc", "price": "13 DT" },
-      { "item": "Noisette", "price": "15 DT" },
-      { "item": "Nutella", "price": "18 DT" },
-      { "item": "Nutella Spéculoos", "price": "20 DT" },
-      { "item": "Caramel", "price": "18 DT" },
-      { "item": "Chocolat noir", "price": "11 dt" },
-      { "item": "Oreo", "price": "15 dt" },
-      { "item": "Spéculos", "price": "15 dt" }
+      {
+        "item": "Vanille",
+        "price": "12 DT"
+      },
+      {
+        "item": "Noisette",
+        "price": "15 DT"
+      },
+      {
+        "item": "Nutella",
+        "price": "18 DT"
+      },
+      {
+        "item": "Nutella Spéculoos",
+        "price": "20 DT"
+      },
+      {
+        "item": "Caramel",
+        "price": "18 DT"
+      },
+      {
+        "item": "Chocolat noir",
+        "price": "11 dt"
+      }
     ]
   },
   "Vagary Coffee": {
     "image": "20250712_1424_Text-Free Coffee Menu_remix_01jzzctmbsfs1tzs4tyb19bedz-min.png",
     "items": [
-      { "item": "Vagary Noisette", "price": "12 dt" },
-      { "item": "Vagary Pistachio", "price": "14 dt" },
-      { "item": "Vagary Cacahuète", "price": "11 dt" }
+      {
+        "item": "Vagary Noisette",
+        "price": "12 dt"
+      },
+      {
+        "item": "Vagary Pistachio",
+        "price": "14 dt"
+      },
+      {
+        "item": "Vagary Cacahuète",
+        "price": "11 dt"
+      }
     ]
   },
   "L'Heure du Matcha": {
     "image": "matcha.png",
     "items": [
-      { "item": "Hot Matcha", "price": "13 DT" },
-      { "item": "Le Rêve de Matcha", "price": "15 DT" },
-      { "item": "Délic Matcha", "price": "15 DT" },
-      { "item": "Flan de Matcha", "price": "15 DT" },
-      { "item": "Iced Matcha Latte", "price": "13 DT" },
-      { "item": "Fleur de Matcha", "price": "15 dt" }
+      {
+        "item": "Hot Matcha",
+        "price": "13 DT"
+      },
+      {
+        "item": "Le Rêve de Matcha",
+        "price": "15 DT"
+      },
+      {
+        "item": "Délic Matcha",
+        "price": "15 DT"
+      },
+      {
+        "item": "Flan de Matcha",
+        "price": "15 DT"
+      },
+      {
+        "item": "Iced Matcha Latte",
+        "price": "13 DT"
+      }
     ]
   },
   "Chocolat Chaud": {
     "image": "chocolat-chaude.jpg",
     "items": [
-      { "item": "Classic", "price": "10 dt" },
-      { "item": "Choco Banane", "price": "12 dt" },
-      { "item": "Choco Oreo", "price": "13 dt" },
-      { "item": "Hot Nutella Spéculos", "price": "14 dt" },
-      { "item": "Choco Pistachio", "price": "14 dt" }
+      {
+        "item": "Classic",
+        "price": "10 dt"
+      },
+      {
+        "item": "Choco Banane",
+        "price": "12 dt"
+      },
+      {
+        "item": "Choco Oreo",
+        "price": "13 dt"
+      },
+      {
+        "item": "Hot Nutella Spéculos",
+        "price": "14 dt"
+      },
+      {
+        "item": "Choco Pistachio",
+        "price": "14 dt"
+      }
     ]
   },
   "Thé": {
     "image": "the.jpg",
     "items": [
-      { "item": "Thé vert", "price": "6 dt" },
-      { "item": "Thé pignons", "price": "14 dt" },
-      { "item": "Thé amandes", "price": "10 dt" }
+      {
+        "item": "Thé vert",
+        "price": "6 dt"
+      },
+      {
+        "item": "Thé pignons",
+        "price": "14 dt"
+      },
+      {
+        "item": "Thé amandes",
+        "price": "10 dt"
+      }
     ]
   },
   "Thés & Infusions": {
     "image": "infusion.jpg",
     "items": [
-      { "item": "Verveine", "price": "6 DT" },
-      { "item": "Thé vert", "price": "6 DT" },
-      { "item": "Camomille", "price": "6 DT" },
-      { "item": "Kinkeliba", "price": "6 DT" },
-      { "item": "Thé rouge", "price": "6 DT" },
-      { "item": "Fraise", "price": "8 dt" }
+      {
+        "item": "Verveine",
+        "price": "6 DT"
+      },
+      {
+        "item": "Thé vert",
+        "price": "6 DT"
+      },
+      {
+        "item": "Camomille",
+        "price": "6 DT"
+      },
+      {
+        "item": "Kinkeliba",
+        "price": "6 DT"
+      },
+      {
+        "item": "Thé rouge",
+        "price": "6 DT"
+      },
+      {
+        "item": "Fraise",
+        "price": "8 dt"
+      }
     ]
   },
   "Détox": {
@@ -453,35 +804,66 @@
       {
         "item": "Basilic Pomme Zen",
         "price": "16 DT",
-        "ingredients": ["Basilic", "gingembre", "pomme"]
+        "ingredients": [
+          "Basilic",
+          "gingembre",
+          "pomme"
+        ]
       },
       {
         "item": "Énergie Tropicale",
         "price": "18 DT",
-        "ingredients": ["Kiwi", "mangue", "pomme", "gingembre"]
+        "ingredients": [
+          "Kiwi",
+          "mangue",
+          "pomme",
+          "gingembre"
+        ]
       },
       {
         "item": "Détox Exotique",
         "price": "17 DT",
-        "ingredients": ["Ananas", "mangue", "gingembre", "citron"]
+        "ingredients": [
+          "Ananas",
+          "mangue",
+          "gingembre",
+          "citron"
+        ]
       },
       {
         "item": "So Healthy",
         "price": "17 DT",
-        "ingredients": ["Betterave", "fruits rouges", "épices"]
+        "ingredients": [
+          "Betterave",
+          "fruits rouges",
+          "épices"
+        ]
       }
     ]
   },
-  "Mocktails": {
+  "Mojito": {
     "image": "mojito.png",
     "items": [
-      { "item": "Classique", "price": "15 DT" },
-      { "item": "Bleu", "price": "16 DT" },
-      { "item": "Fruits rouges", "price": "16 DT" },
-      { "item": "Mangue Passion", "price": "18 DT" },
-      { "item": "Bleu Ananas", "price": "18 DT" },
-      { "item": "Fraise", "price": "13 dt" },
-      { "item": "Fruits des bois", "price": "14 dt" }
+      {
+        "item": "Classique",
+        "price": "15 DT"
+      },
+      {
+        "item": "Bleu",
+        "price": "16 DT"
+      },
+      {
+        "item": "Fruits rouges",
+        "price": "16 DT"
+      },
+      {
+        "item": "Mangue Passion",
+        "price": "18 DT"
+      },
+      {
+        "item": "Bleu Ananas",
+        "price": "18 DT"
+      }
     ]
   },
   "Smoothies": {
@@ -490,79 +872,163 @@
       {
         "item": "Énergie Rouge",
         "price": "18 DT",
-        "ingredients": ["Fruits rouges", "citron", "basilic"]
+        "ingredients": [
+          "Fruits rouges",
+          "citron",
+          "basilic"
+        ]
       },
       {
         "item": "Pink Banana",
         "price": "18 DT",
-        "ingredients": ["Fraise", "banane"]
+        "ingredients": [
+          "Fraise",
+          "banane"
+        ]
       },
       {
         "item": "Strawberry Dream",
         "price": "18 DT",
-        "ingredients": ["Pêche", "banane", "fruits rouges"]
+        "ingredients": [
+          "Pêche",
+          "banane",
+          "fruits rouges"
+        ]
       },
-      { "item": "Mango Milo Fusion", "price": "15 dt" },
-      { "item": "Rouge Mentholé", "price": "13 dt" },
-      { "item": "Rosée Gourmande", "price": "11 dt" },
-      { "item": "Vagary", "price": "18 dt" }
+      {
+        "item": "Mango Milo Fusion",
+        "price": "15 dt"
+      },
+      {
+        "item": "Rouge Mentholé",
+        "price": "13 dt"
+      },
+      {
+        "item": "Rosée Gourmande",
+        "price": "11 dt"
+      },
+      {
+        "item": "Vagary",
+        "price": "18 dt"
+      }
     ]
   },
-  "Jus & Cocktails sans alcool": {
+  "Jus & Cocktails": {
     "image": "jus.png",
     "items": [
-      { "item": "Orange frais", "price": "8,5 DT" },
-      { "item": "Jus d'ananas", "price": "11 DT" },
-      { "item": "Jus d'avocat", "price": "15 DT" },
-      { "item": "Jus de pêche", "price": "13 DT" },
-      { "item": "Jus de banane", "price": "14 DT" },
+      {
+        "item": "Orange frais",
+        "price": "8,5 DT"
+      },
+      {
+        "item": "Jus d'ananas",
+        "price": "11 DT"
+      },
+      {
+        "item": "Jus d'avocat",
+        "price": "15 DT"
+      },
+      {
+        "item": "Jus de pêche",
+        "price": "13 DT"
+      },
+      {
+        "item": "Jus de banane",
+        "price": "14 DT"
+      },
       {
         "item": "Piña Colada",
         "price": "18 DT",
-        "ingredients": ["Ananas", "lait", "noix de coco"]
+        "ingredients": [
+          "Ananas",
+          "lait",
+          "noix de coco"
+        ]
       },
       {
         "item": "Sunset Tropic",
         "price": "18 DT",
-        "ingredients": ["Ananas", "pastèque", "basilic frais", "noix de coco"]
+        "ingredients": [
+          "Ananas",
+          "pastèque",
+          "basilic frais",
+          "noix de coco"
+        ]
       },
       {
         "item": "Fresh Tropic",
         "price": "18 DT",
-        "ingredients": ["Banane", "mangue", "ananas", "framboise"]
+        "ingredients": [
+          "Banane",
+          "mangue",
+          "ananas",
+          "framboise"
+        ]
       },
       {
         "item": "Vagary Signature",
         "price": "19 DT",
-        "ingredients": ["Banane", "datte", "miel", "lait de coco"]
+        "ingredients": [
+          "Banane",
+          "datte",
+          "miel",
+          "lait de coco"
+        ]
       },
-      { "item": "Soleil au citron", "price": "8 dt" },
-      { "item": "Douceur de fraise", "price": "9 dt" },
-      { "item": "Délice citron amande", "price": "13 dt" },
-      { "item": "Éclat vert kiwi", "price": "14 dt" },
-      { "item": "Rouge Échaudé", "price": "15 dt" },
-      { "item": "Banana Berry Magic", "price": "14 dt" },
-      { "item": "Tropical Solei", "price": "14 dt" }
+      {
+        "item": "Soleil au citron",
+        "price": "8 dt"
+      },
+      {
+        "item": "Douceur de fraise",
+        "price": "9 dt"
+      },
+      {
+        "item": "Éclat vert kiwi",
+        "price": "14 dt"
+      }
     ]
   },
   "Milkshakes": {
     "image": "milkshake.png",
     "items": [
-      { "item": "Vanille", "price": "14 DT" },
-      { "item": "Nutella", "price": "18 DT" },
-      { "item": "Oreo", "price": "18 DT" },
-      { "item": "Spéculoos", "price": "18 DT" },
-      { "item": "Vagary Pistache", "price": "20 DT" },
-      { "item": "Fraise", "price": "14 dt" },
-      { "item": "Chocolat", "price": "13 dt" }
+      {
+        "item": "Vanille",
+        "price": "14 DT"
+      },
+      {
+        "item": "Nutella",
+        "price": "18 DT"
+      },
+      {
+        "item": "Oreo",
+        "price": "18 DT"
+      },
+      {
+        "item": "Spéculoos",
+        "price": "18 DT"
+      },
+      {
+        "item": "Vagary Pistache",
+        "price": "20 DT"
+      }
     ]
   },
   "Boissons": {
     "image": "soda.png",
     "items": [
-      { "item": "Eau 1 L", "price": "5 DT" },
-      { "item": "Eau 0,5 L", "price": "2,5 DT" },
-      { "item": "Soda", "price": "5 DT" }
+      {
+        "item": "Eau 1 L",
+        "price": "5 DT"
+      },
+      {
+        "item": "Eau 0,5 L",
+        "price": "2,5 DT"
+      },
+      {
+        "item": "Soda",
+        "price": "5 DT"
+      }
     ]
   }
 }
